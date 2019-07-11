@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/scda-framework-common/scda-framework-common.iml" filepath="$PROJECT_DIR$/scda-framework-common/scda-framework-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-framework-model/scda-framework-model.iml" filepath="$PROJECT_DIR$/scda-framework-model/scda-framework-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-framework-parent.iml" filepath="$PROJECT_DIR$/scda-framework-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-framework-utils/scda-framework-utils.iml" filepath="$PROJECT_DIR$/scda-framework-utils/scda-framework-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-freemaker-createjavafile/scda-freemaker-createjavafile.iml" filepath="$PROJECT_DIR$/scda-freemaker-createjavafile/scda-freemaker-createjavafile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-govern-center/scda-govern-center.iml" filepath="$PROJECT_DIR$/scda-govern-center/scda-govern-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-govern-gateway/scda-govern-gateway.iml" filepath="$PROJECT_DIR$/scda-govern-gateway/scda-govern-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-service-api/scda-service-api.iml" filepath="$PROJECT_DIR$/scda-service-api/scda-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-service-createtablesql/scda-service-createtablesql.iml" filepath="$PROJECT_DIR$/scda-service-createtablesql/scda-service-createtablesql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-service-purchasecontrol/scda-service-purchasecontrol.iml" filepath="$PROJECT_DIR$/scda-service-purchasecontrol/scda-service-purchasecontrol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-service-purchaseexecute/scda-service-purchaseexecute.iml" filepath="$PROJECT_DIR$/scda-service-purchaseexecute/scda-service-purchaseexecute.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-service-purchasetime/scda-service-purchasetime.iml" filepath="$PROJECT_DIR$/scda-service-purchasetime/scda-service-purchasetime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-service-task/scda-service-task.iml" filepath="$PROJECT_DIR$/scda-service-task/scda-service-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-service-ucenter/scda-service-ucenter.iml" filepath="$PROJECT_DIR$/scda-service-ucenter/scda-service-ucenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scda-service-ucenter-auth/scda-service-ucenter-auth.iml" filepath="$PROJECT_DIR$/scda-service-ucenter-auth/scda-service-ucenter-auth.iml" />
+    </modules>
+  </component>
+</project>

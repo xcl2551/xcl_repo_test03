@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.createjavafile.mapper.TableDetailMapper">
+    <resultMap id="DetailResultMap" type="com.pccw.createjavafile.domain.TableDetail">
+        <result column="Table_name" property="tableName" jdbcType="VARCHAR"/>
+        <result column="column_name" property="columnName" jdbcType="VARCHAR"/>
+        <result column="data_type" property="dataType" jdbcType="VARCHAR"/>
+        <result column="data_length" property="dataLength" jdbcType="VARCHAR"/>
+        <result column="data_precision" property="dataPrecision" jdbcType="VARCHAR"/>
+        <result column="nullable" property="nullable" jdbcType="VARCHAR"/>
+        <result column="column_id" property="columnId" jdbcType="VARCHAR"/>
+        <result column="comments" property="comments" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <select id="getDetailFromTableName" resultMap="DetailResultMap" parameterType="java.lang.String">
+
+select * from
+(select a.table_name,a.column_name,a.data_type,a.data_length,a.data_precision,a.nullable,a.column_id,b.comments
+from user_tab_columns a left join user_col_comments b on a.TABLE_NAME=b.table_name and a.COLUMN_NAME=b.column_name ) a
+where a.TABLE_NAME = #{tableName}  order by a.COLUMN_ID asc
+</select>
+
+</mapper>

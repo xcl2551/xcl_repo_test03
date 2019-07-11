@@ -1,0 +1,5 @@
+com\pccw\govern\gateway\filter\LoginFilterTest.class
+com\pccw\govern\gateway\filter\LoginFilter.class
+com\pccw\govern\gateway\service\AuthService.class
+com\pccw\govern\gateway\conifg\MvcConfigurerConfig.class
+com\pccw\govern\gateway\GatewayApplication.class

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.purchaseexecute.mapper.ScdaYearPurcExecuteMapper" >
+  <resultMap id="BaseResultMap" type="com.pccw.framework.domain.purchaseexecute.ScdaYearPurcExecute" >
+    <id column="YPE_ID" property="ypeId" jdbcType="VARCHAR" />
+    <result column="DEADLINE_DATE" property="deadlineDate" jdbcType="VARCHAR" />
+    <result column="ACTUALLY_OCCURRED_AMT" property="actuallyOccurredAmt" jdbcType="VARCHAR" />
+    <result column="AO_ONE_PUECHASE_AMT" property="aoOnePuechaseAmt" jdbcType="VARCHAR" />
+    <result column="AO_TWO_PUECHASE_AMT" property="aoTwoPuechaseAmt" jdbcType="VARCHAR" />
+    <result column="AO_UNGROUP_PUECHASE_AMT" property="aoUngroupPuechaseAmt" jdbcType="VARCHAR" />
+    <result column="GROUP_SIZE_AMT" property="groupSizeAmt" jdbcType="VARCHAR" />
+    <result column="GS_ONE_PUECHASE_AMT" property="gsOnePuechaseAmt" jdbcType="VARCHAR" />
+    <result column="GS_TWO_PUECHASE_AMT" property="gsTwoPuechaseAmt" jdbcType="VARCHAR" />
+    <result column="GS_UNGROUP_PUECHASE_AMT" property="gsUngroupPuechaseAmt" jdbcType="VARCHAR" />
+    <result column="GS_ONE_PURCHASE_GROUP" property="gsOnePurchaseGroup" jdbcType="VARCHAR" />
+    <result column="GS_TWO_PURCHASE_GROUP" property="gsTwoPurchaseGroup" jdbcType="VARCHAR" />
+    <result column="CREATION_DATE" property="creationDate" jdbcType="TIMESTAMP" />
+    <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR" />
+    <result column="LAST_UPDATE_DATE" property="lastUpdateDate" jdbcType="TIMESTAMP" />
+    <result column="LAST_UPDATED_BY" property="lastUpdatedBy" jdbcType="VARCHAR" />
+    <result column="ENABLE_FLAG" property="enableFlag" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE1" property="attribute1" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE2" property="attribute2" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE3" property="attribute3" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE4" property="attribute4" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE5" property="attribute5" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE6" property="attribute6" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE7" property="attribute7" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE8" property="attribute8" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE9" property="attribute9" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE10" property="attribute10" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    YPE_ID, DEADLINE_DATE, ACTUALLY_OCCURRED_AMT, AO_ONE_PUECHASE_AMT, AO_TWO_PUECHASE_AMT,
+    AO_UNGROUP_PUECHASE_AMT, GROUP_SIZE_AMT, GS_ONE_PUECHASE_AMT, GS_TWO_PUECHASE_AMT,
+    GS_UNGROUP_PUECHASE_AMT, GS_ONE_PURCHASE_GROUP, GS_TWO_PURCHASE_GROUP, CREATION_DATE,
+    CREATED_BY, LAST_UPDATE_DATE, LAST_UPDATED_BY, ENABLE_FLAG, ATTRIBUTE1, ATTRIBUTE2,
+    ATTRIBUTE3, ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9,
+    ATTRIBUTE10
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaYearPurcExecuteExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from SCDA_YEAR_PURC_EXECUTE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from SCDA_YEAR_PURC_EXECUTE
+    where YPE_ID = #{ypeId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from SCDA_YEAR_PURC_EXECUTE
+    where YPE_ID = #{ypeId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaYearPurcExecuteExample" >
+    delete from SCDA_YEAR_PURC_EXECUTE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaYearPurcExecute" >
+    insert into SCDA_YEAR_PURC_EXECUTE (YPE_ID, DEADLINE_DATE, ACTUALLY_OCCURRED_AMT,
+    AO_ONE_PUECHASE_AMT, AO_TWO_PUECHASE_AMT, AO_UNGROUP_PUECHASE_AMT,
+    GROUP_SIZE_AMT, GS_ONE_PUECHASE_AMT, GS_TWO_PUECHASE_AMT,
+    GS_UNGROUP_PUECHASE_AMT, GS_ONE_PURCHASE_GROUP,
+    GS_TWO_PURCHASE_GROUP, CREATION_DATE, CREATED_BY,
+    LAST_UPDATE_DATE, LAST_UPDATED_BY, ENABLE_FLAG,
+    ATTRIBUTE1, ATTRIBUTE2, ATTRIBUTE3,
+    ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6,
+    ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9,
+    ATTRIBUTE10)
+    values (#{ypeId,jdbcType=VARCHAR}, #{deadlineDate,jdbcType=VARCHAR}, #{actuallyOccurredAmt,jdbcType=VARCHAR},
+    #{aoOnePuechaseAmt,jdbcType=VARCHAR}, #{aoTwoPuechaseAmt,jdbcType=VARCHAR}, #{aoUngroupPuechaseAmt,jdbcType=VARCHAR},
+    #{groupSizeAmt,jdbcType=VARCHAR}, #{gsOnePuechaseAmt,jdbcType=VARCHAR}, #{gsTwoPuechaseAmt,jdbcType=VARCHAR},
+    #{gsUngroupPuechaseAmt,jdbcType=VARCHAR}, #{gsOnePurchaseGroup,jdbcType=VARCHAR},
+    #{gsTwoPurchaseGroup,jdbcType=VARCHAR}, #{creationDate,jdbcType=DATE}, #{createdBy,jdbcType=VARCHAR},
+    #{lastUpdateDate,jdbcType=DATE}, #{lastUpdatedBy,jdbcType=VARCHAR}, #{enableFlag,jdbcType=VARCHAR},
+    #{attribute1,jdbcType=VARCHAR}, #{attribute2,jdbcType=VARCHAR}, #{attribute3,jdbcType=VARCHAR},
+    #{attribute4,jdbcType=VARCHAR}, #{attribute5,jdbcType=VARCHAR}, #{attribute6,jdbcType=VARCHAR},
+    #{attribute7,jdbcType=VARCHAR}, #{attribute8,jdbcType=VARCHAR}, #{attribute9,jdbcType=VARCHAR},
+    #{attribute10,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaYearPurcExecute" >
+    insert into SCDA_YEAR_PURC_EXECUTE
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="ypeId != null" >
+        YPE_ID,
+      </if>
+      <if test="deadlineDate != null" >
+        DEADLINE_DATE,
+      </if>
+      <if test="actuallyOccurredAmt != null" >
+        ACTUALLY_OCCURRED_AMT,
+      </if>
+      <if test="aoOnePuechaseAmt != null" >
+        AO_ONE_PUECHASE_AMT,
+      </if>
+      <if test="aoTwoPuechaseAmt != null" >
+        AO_TWO_PUECHASE_AMT,
+      </if>
+      <if test="aoUngroupPuechaseAmt != null" >
+        AO_UNGROUP_PUECHASE_AMT,
+      </if>
+      <if test="groupSizeAmt != null" >
+        GROUP_SIZE_AMT,
+      </if>
+      <if test="gsOnePuechaseAmt != null" >
+        GS_ONE_PUECHASE_AMT,
+      </if>
+      <if test="gsTwoPuechaseAmt != null" >
+        GS_TWO_PUECHASE_AMT,
+      </if>
+      <if test="gsUngroupPuechaseAmt != null" >
+        GS_UNGROUP_PUECHASE_AMT,
+      </if>
+      <if test="gsOnePurchaseGroup != null" >
+        GS_ONE_PURCHASE_GROUP,
+      </if>
+      <if test="gsTwoPurchaseGroup != null" >
+        GS_TWO_PURCHASE_GROUP,
+      </if>
+      <if test="creationDate != null" >
+        CREATION_DATE,
+      </if>
+      <if test="createdBy != null" >
+        CREATED_BY,
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE,
+      </if>
+      <if test="lastUpdatedBy != null" >
+        LAST_UPDATED_BY,
+      </if>
+      <if test="enableFlag != null" >
+        ENABLE_FLAG,
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1,
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2,
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3,
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4,
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5,
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6,
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7,
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8,
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9,
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="ypeId != null" >
+        #{ypeId,jdbcType=VARCHAR},
+      </if>
+      <if test="deadlineDate != null" >
+        #{deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="actuallyOccurredAmt != null" >
+        #{actuallyOccurredAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="aoOnePuechaseAmt != null" >
+        #{aoOnePuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="aoTwoPuechaseAmt != null" >
+        #{aoTwoPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="aoUngroupPuechaseAmt != null" >
+        #{aoUngroupPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="groupSizeAmt != null" >
+        #{groupSizeAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="gsOnePuechaseAmt != null" >
+        #{gsOnePuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="gsTwoPuechaseAmt != null" >
+        #{gsTwoPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="gsUngroupPuechaseAmt != null" >
+        #{gsUngroupPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="gsOnePurchaseGroup != null" >
+        #{gsOnePurchaseGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="gsTwoPurchaseGroup != null" >
+        #{gsTwoPurchaseGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="creationDate != null" >
+        #{creationDate,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="lastUpdatedBy != null" >
+        #{lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="enableFlag != null" >
+        #{enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaYearPurcExecuteExample" resultType="java.lang.Integer" >
+    select count(*) from SCDA_YEAR_PURC_EXECUTE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update SCDA_YEAR_PURC_EXECUTE
+    <set >
+      <if test="record.ypeId != null" >
+        YPE_ID = #{record.ypeId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deadlineDate != null" >
+        DEADLINE_DATE = #{record.deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.actuallyOccurredAmt != null" >
+        ACTUALLY_OCCURRED_AMT = #{record.actuallyOccurredAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aoOnePuechaseAmt != null" >
+        AO_ONE_PUECHASE_AMT = #{record.aoOnePuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aoTwoPuechaseAmt != null" >
+        AO_TWO_PUECHASE_AMT = #{record.aoTwoPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aoUngroupPuechaseAmt != null" >
+        AO_UNGROUP_PUECHASE_AMT = #{record.aoUngroupPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.groupSizeAmt != null" >
+        GROUP_SIZE_AMT = #{record.groupSizeAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gsOnePuechaseAmt != null" >
+        GS_ONE_PUECHASE_AMT = #{record.gsOnePuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gsTwoPuechaseAmt != null" >
+        GS_TWO_PUECHASE_AMT = #{record.gsTwoPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gsUngroupPuechaseAmt != null" >
+        GS_UNGROUP_PUECHASE_AMT = #{record.gsUngroupPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gsOnePurchaseGroup != null" >
+        GS_ONE_PURCHASE_GROUP = #{record.gsOnePurchaseGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gsTwoPurchaseGroup != null" >
+        GS_TWO_PURCHASE_GROUP = #{record.gsTwoPurchaseGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="record.creationDate != null" >
+        CREATION_DATE = #{record.creationDate,jdbcType=DATE},
+      </if>
+      <if test="record.createdBy != null" >
+        CREATED_BY = #{record.createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="record.lastUpdatedBy != null" >
+        LAST_UPDATED_BY = #{record.lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.enableFlag != null" >
+        ENABLE_FLAG = #{record.enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute1 != null" >
+        ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute2 != null" >
+        ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute3 != null" >
+        ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute4 != null" >
+        ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute5 != null" >
+        ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute6 != null" >
+        ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute7 != null" >
+        ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute8 != null" >
+        ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute9 != null" >
+        ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute10 != null" >
+        ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update SCDA_YEAR_PURC_EXECUTE
+    set YPE_ID = #{record.ypeId,jdbcType=VARCHAR},
+    DEADLINE_DATE = #{record.deadlineDate,jdbcType=VARCHAR},
+    ACTUALLY_OCCURRED_AMT = #{record.actuallyOccurredAmt,jdbcType=VARCHAR},
+    AO_ONE_PUECHASE_AMT = #{record.aoOnePuechaseAmt,jdbcType=VARCHAR},
+    AO_TWO_PUECHASE_AMT = #{record.aoTwoPuechaseAmt,jdbcType=VARCHAR},
+    AO_UNGROUP_PUECHASE_AMT = #{record.aoUngroupPuechaseAmt,jdbcType=VARCHAR},
+    GROUP_SIZE_AMT = #{record.groupSizeAmt,jdbcType=VARCHAR},
+    GS_ONE_PUECHASE_AMT = #{record.gsOnePuechaseAmt,jdbcType=VARCHAR},
+    GS_TWO_PUECHASE_AMT = #{record.gsTwoPuechaseAmt,jdbcType=VARCHAR},
+    GS_UNGROUP_PUECHASE_AMT = #{record.gsUngroupPuechaseAmt,jdbcType=VARCHAR},
+    GS_ONE_PURCHASE_GROUP = #{record.gsOnePurchaseGroup,jdbcType=VARCHAR},
+    GS_TWO_PURCHASE_GROUP = #{record.gsTwoPurchaseGroup,jdbcType=VARCHAR},
+    CREATION_DATE = #{record.creationDate,jdbcType=DATE},
+    CREATED_BY = #{record.createdBy,jdbcType=VARCHAR},
+    LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+    LAST_UPDATED_BY = #{record.lastUpdatedBy,jdbcType=VARCHAR},
+    ENABLE_FLAG = #{record.enableFlag,jdbcType=VARCHAR},
+    ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+    ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+    ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+    ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+    ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+    ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+    ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+    ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+    ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+    ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaYearPurcExecute" >
+    update SCDA_YEAR_PURC_EXECUTE
+    <set >
+      <if test="deadlineDate != null" >
+        DEADLINE_DATE = #{deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="actuallyOccurredAmt != null" >
+        ACTUALLY_OCCURRED_AMT = #{actuallyOccurredAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="aoOnePuechaseAmt != null" >
+        AO_ONE_PUECHASE_AMT = #{aoOnePuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="aoTwoPuechaseAmt != null" >
+        AO_TWO_PUECHASE_AMT = #{aoTwoPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="aoUngroupPuechaseAmt != null" >
+        AO_UNGROUP_PUECHASE_AMT = #{aoUngroupPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="groupSizeAmt != null" >
+        GROUP_SIZE_AMT = #{groupSizeAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="gsOnePuechaseAmt != null" >
+        GS_ONE_PUECHASE_AMT = #{gsOnePuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="gsTwoPuechaseAmt != null" >
+        GS_TWO_PUECHASE_AMT = #{gsTwoPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="gsUngroupPuechaseAmt != null" >
+        GS_UNGROUP_PUECHASE_AMT = #{gsUngroupPuechaseAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="gsOnePurchaseGroup != null" >
+        GS_ONE_PURCHASE_GROUP = #{gsOnePurchaseGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="gsTwoPurchaseGroup != null" >
+        GS_TWO_PURCHASE_GROUP = #{gsTwoPurchaseGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="creationDate != null" >
+        CREATION_DATE = #{creationDate,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="lastUpdatedBy != null" >
+        LAST_UPDATED_BY = #{lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="enableFlag != null" >
+        ENABLE_FLAG = #{enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where YPE_ID = #{ypeId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaYearPurcExecute" >
+    update SCDA_YEAR_PURC_EXECUTE
+    set DEADLINE_DATE = #{deadlineDate,jdbcType=VARCHAR},
+      ACTUALLY_OCCURRED_AMT = #{actuallyOccurredAmt,jdbcType=VARCHAR},
+      AO_ONE_PUECHASE_AMT = #{aoOnePuechaseAmt,jdbcType=VARCHAR},
+      AO_TWO_PUECHASE_AMT = #{aoTwoPuechaseAmt,jdbcType=VARCHAR},
+      AO_UNGROUP_PUECHASE_AMT = #{aoUngroupPuechaseAmt,jdbcType=VARCHAR},
+      GROUP_SIZE_AMT = #{groupSizeAmt,jdbcType=VARCHAR},
+      GS_ONE_PUECHASE_AMT = #{gsOnePuechaseAmt,jdbcType=VARCHAR},
+      GS_TWO_PUECHASE_AMT = #{gsTwoPuechaseAmt,jdbcType=VARCHAR},
+      GS_UNGROUP_PUECHASE_AMT = #{gsUngroupPuechaseAmt,jdbcType=VARCHAR},
+      GS_ONE_PURCHASE_GROUP = #{gsOnePurchaseGroup,jdbcType=VARCHAR},
+      GS_TWO_PURCHASE_GROUP = #{gsTwoPurchaseGroup,jdbcType=VARCHAR},
+      CREATION_DATE = #{creationDate,jdbcType=DATE},
+      CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      LAST_UPDATED_BY = #{lastUpdatedBy,jdbcType=VARCHAR},
+      ENABLE_FLAG = #{enableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR}
+    where YPE_ID = #{ypeId,jdbcType=VARCHAR}
+  </update>
+</mapper>

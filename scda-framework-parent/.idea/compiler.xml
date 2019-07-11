@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="scda-framework-common" />
+        <module name="scda-framework-model" />
+        <module name="scda-framework-utils" />
+        <module name="scda-freemaker-createjavafile" />
+        <module name="scda-govern-center" />
+        <module name="scda-govern-gateway" />
+        <module name="scda-service-api" />
+        <module name="scda-service-createtablesql" />
+        <module name="scda-service-purchasecontrol" />
+        <module name="scda-service-purchaseexecute" />
+        <module name="scda-service-purchasetime" />
+        <module name="scda-service-task" />
+        <module name="scda-service-ucenter" />
+        <module name="scda-service-ucenter-auth" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="scda-framework-common" target="1.8" />
+      <module name="scda-framework-model" target="1.8" />
+      <module name="scda-framework-parent" target="1.8" />
+      <module name="scda-framework-utils" target="1.8" />
+      <module name="scda-freemaker-createjavafile" target="1.8" />
+      <module name="scda-govern-center" target="1.8" />
+      <module name="scda-govern-gateway" target="1.8" />
+      <module name="scda-service-api" target="1.8" />
+      <module name="scda-service-createtablesql" target="1.8" />
+      <module name="scda-service-purchasecontrol" target="1.8" />
+      <module name="scda-service-purchaseexecute" target="1.8" />
+      <module name="scda-service-purchasetime" target="1.8" />
+      <module name="scda-service-scdaporequestprojects" target="1.8" />
+      <module name="scda-service-task" target="1.8" />
+      <module name="scda-service-ucenter" target="1.8" />
+      <module name="scda-service-ucenter-auth" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

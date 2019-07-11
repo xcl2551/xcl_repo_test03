@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.purchasecontrol.mapper.ScdaDeptPurDemandandpreMapper" >
+  <resultMap id="BaseResultMap" type="com.pccw.framework.domain.purchasecontrol.ScdaDeptPurDemandandpre" >
+    <id column="DPD_ID" property="dpdId" jdbcType="VARCHAR" />
+    <result column="DEADLINE_DATE" property="deadlineDate" jdbcType="VARCHAR" />
+    <result column="YEAR_TWODEPT_TOTAL" property="yearTwodeptTotal" jdbcType="VARCHAR" />
+    <result column="BEFYEAR_TWODEPT_TOTAL" property="befyearTwodeptTotal" jdbcType="VARCHAR" />
+    <result column="YEAL_NETWORK_TOTAL" property="yealNetworkTotal" jdbcType="VARCHAR" />
+    <result column="YEAL_NETWORK_COMPLETED" property="yealNetworkCompleted" jdbcType="VARCHAR" />
+    <result column="YEAL_NETWORK_PERCENTAGE" property="yealNetworkPercentage" jdbcType="VARCHAR" />
+    <result column="YEAL_GENERAL_TOTAL" property="yealGeneralTotal" jdbcType="VARCHAR" />
+    <result column="YEAL_GENERAL_COMPLETED" property="yealGeneralCompleted" jdbcType="VARCHAR" />
+    <result column="YEAL_GENERAL_PERCENTAGE" property="yealGeneralPercentage" jdbcType="VARCHAR" />
+    <result column="CREATION_DATE" property="creationDate" jdbcType="TIMESTAMP" />
+    <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR" />
+    <result column="LAST_UPDATE_DATE" property="lastUpdateDate" jdbcType="TIMESTAMP" />
+    <result column="LAST_UPDATED_BY" property="lastUpdatedBy" jdbcType="VARCHAR" />
+    <result column="ENABLE_FLAG" property="enableFlag" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE1" property="attribute1" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE2" property="attribute2" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE3" property="attribute3" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE4" property="attribute4" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE5" property="attribute5" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE6" property="attribute6" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE7" property="attribute7" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE8" property="attribute8" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE9" property="attribute9" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE10" property="attribute10" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    DPD_ID, DEADLINE_DATE, YEAR_TWODEPT_TOTAL, BEFYEAR_TWODEPT_TOTAL, YEAL_NETWORK_TOTAL, 
+    YEAL_NETWORK_COMPLETED, YEAL_NETWORK_PERCENTAGE, YEAL_GENERAL_TOTAL, YEAL_GENERAL_COMPLETED, 
+    YEAL_GENERAL_PERCENTAGE, CREATION_DATE, CREATED_BY, LAST_UPDATE_DATE, LAST_UPDATED_BY, 
+    ENABLE_FLAG, ATTRIBUTE1, ATTRIBUTE2, ATTRIBUTE3, ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, 
+    ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9, ATTRIBUTE10
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaDeptPurDemandandpreExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from SCDA_DEPT_PUR_DEMANDANDPRE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from SCDA_DEPT_PUR_DEMANDANDPRE
+    where DPD_ID = #{dpdId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from SCDA_DEPT_PUR_DEMANDANDPRE
+    where DPD_ID = #{dpdId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaDeptPurDemandandpreExample" >
+    delete from SCDA_DEPT_PUR_DEMANDANDPRE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaDeptPurDemandandpre" >
+    insert into SCDA_DEPT_PUR_DEMANDANDPRE (DPD_ID, DEADLINE_DATE, YEAR_TWODEPT_TOTAL, 
+      BEFYEAR_TWODEPT_TOTAL, YEAL_NETWORK_TOTAL, 
+      YEAL_NETWORK_COMPLETED, YEAL_NETWORK_PERCENTAGE, 
+      YEAL_GENERAL_TOTAL, YEAL_GENERAL_COMPLETED, 
+      YEAL_GENERAL_PERCENTAGE, CREATION_DATE, CREATED_BY, 
+      LAST_UPDATE_DATE, LAST_UPDATED_BY, ENABLE_FLAG, 
+      ATTRIBUTE1, ATTRIBUTE2, ATTRIBUTE3, 
+      ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, 
+      ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9, 
+      ATTRIBUTE10)
+    values (#{dpdId,jdbcType=VARCHAR}, #{deadlineDate,jdbcType=VARCHAR}, #{yearTwodeptTotal,jdbcType=VARCHAR}, 
+      #{befyearTwodeptTotal,jdbcType=VARCHAR}, #{yealNetworkTotal,jdbcType=VARCHAR}, 
+      #{yealNetworkCompleted,jdbcType=VARCHAR}, #{yealNetworkPercentage,jdbcType=VARCHAR}, 
+      #{yealGeneralTotal,jdbcType=VARCHAR}, #{yealGeneralCompleted,jdbcType=VARCHAR}, 
+      #{yealGeneralPercentage,jdbcType=VARCHAR}, #{creationDate,jdbcType=DATE}, #{createdBy,jdbcType=VARCHAR}, 
+      #{lastUpdateDate,jdbcType=DATE}, #{lastUpdatedBy,jdbcType=VARCHAR}, #{enableFlag,jdbcType=VARCHAR}, 
+      #{attribute1,jdbcType=VARCHAR}, #{attribute2,jdbcType=VARCHAR}, #{attribute3,jdbcType=VARCHAR}, 
+      #{attribute4,jdbcType=VARCHAR}, #{attribute5,jdbcType=VARCHAR}, #{attribute6,jdbcType=VARCHAR}, 
+      #{attribute7,jdbcType=VARCHAR}, #{attribute8,jdbcType=VARCHAR}, #{attribute9,jdbcType=VARCHAR}, 
+      #{attribute10,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaDeptPurDemandandpre" >
+    insert into SCDA_DEPT_PUR_DEMANDANDPRE
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="dpdId != null" >
+        DPD_ID,
+      </if>
+      <if test="deadlineDate != null" >
+        DEADLINE_DATE,
+      </if>
+      <if test="yearTwodeptTotal != null" >
+        YEAR_TWODEPT_TOTAL,
+      </if>
+      <if test="befyearTwodeptTotal != null" >
+        BEFYEAR_TWODEPT_TOTAL,
+      </if>
+      <if test="yealNetworkTotal != null" >
+        YEAL_NETWORK_TOTAL,
+      </if>
+      <if test="yealNetworkCompleted != null" >
+        YEAL_NETWORK_COMPLETED,
+      </if>
+      <if test="yealNetworkPercentage != null" >
+        YEAL_NETWORK_PERCENTAGE,
+      </if>
+      <if test="yealGeneralTotal != null" >
+        YEAL_GENERAL_TOTAL,
+      </if>
+      <if test="yealGeneralCompleted != null" >
+        YEAL_GENERAL_COMPLETED,
+      </if>
+      <if test="yealGeneralPercentage != null" >
+        YEAL_GENERAL_PERCENTAGE,
+      </if>
+      <if test="creationDate != null" >
+        CREATION_DATE,
+      </if>
+      <if test="createdBy != null" >
+        CREATED_BY,
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE,
+      </if>
+      <if test="lastUpdatedBy != null" >
+        LAST_UPDATED_BY,
+      </if>
+      <if test="enableFlag != null" >
+        ENABLE_FLAG,
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1,
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2,
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3,
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4,
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5,
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6,
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7,
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8,
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9,
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="dpdId != null" >
+        #{dpdId,jdbcType=VARCHAR},
+      </if>
+      <if test="deadlineDate != null" >
+        #{deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="yearTwodeptTotal != null" >
+        #{yearTwodeptTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="befyearTwodeptTotal != null" >
+        #{befyearTwodeptTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="yealNetworkTotal != null" >
+        #{yealNetworkTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="yealNetworkCompleted != null" >
+        #{yealNetworkCompleted,jdbcType=VARCHAR},
+      </if>
+      <if test="yealNetworkPercentage != null" >
+        #{yealNetworkPercentage,jdbcType=VARCHAR},
+      </if>
+      <if test="yealGeneralTotal != null" >
+        #{yealGeneralTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="yealGeneralCompleted != null" >
+        #{yealGeneralCompleted,jdbcType=VARCHAR},
+      </if>
+      <if test="yealGeneralPercentage != null" >
+        #{yealGeneralPercentage,jdbcType=VARCHAR},
+      </if>
+      <if test="creationDate != null" >
+        #{creationDate,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="lastUpdatedBy != null" >
+        #{lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="enableFlag != null" >
+        #{enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaDeptPurDemandandpreExample" resultType="java.lang.Integer" >
+    select count(*) from SCDA_DEPT_PUR_DEMANDANDPRE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update SCDA_DEPT_PUR_DEMANDANDPRE
+    <set >
+      <if test="record.dpdId != null" >
+        DPD_ID = #{record.dpdId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deadlineDate != null" >
+        DEADLINE_DATE = #{record.deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yearTwodeptTotal != null" >
+        YEAR_TWODEPT_TOTAL = #{record.yearTwodeptTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="record.befyearTwodeptTotal != null" >
+        BEFYEAR_TWODEPT_TOTAL = #{record.befyearTwodeptTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yealNetworkTotal != null" >
+        YEAL_NETWORK_TOTAL = #{record.yealNetworkTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yealNetworkCompleted != null" >
+        YEAL_NETWORK_COMPLETED = #{record.yealNetworkCompleted,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yealNetworkPercentage != null" >
+        YEAL_NETWORK_PERCENTAGE = #{record.yealNetworkPercentage,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yealGeneralTotal != null" >
+        YEAL_GENERAL_TOTAL = #{record.yealGeneralTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yealGeneralCompleted != null" >
+        YEAL_GENERAL_COMPLETED = #{record.yealGeneralCompleted,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yealGeneralPercentage != null" >
+        YEAL_GENERAL_PERCENTAGE = #{record.yealGeneralPercentage,jdbcType=VARCHAR},
+      </if>
+      <if test="record.creationDate != null" >
+        CREATION_DATE = #{record.creationDate,jdbcType=DATE},
+      </if>
+      <if test="record.createdBy != null" >
+        CREATED_BY = #{record.createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="record.lastUpdatedBy != null" >
+        LAST_UPDATED_BY = #{record.lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.enableFlag != null" >
+        ENABLE_FLAG = #{record.enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute1 != null" >
+        ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute2 != null" >
+        ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute3 != null" >
+        ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute4 != null" >
+        ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute5 != null" >
+        ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute6 != null" >
+        ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute7 != null" >
+        ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute8 != null" >
+        ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute9 != null" >
+        ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute10 != null" >
+        ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update SCDA_DEPT_PUR_DEMANDANDPRE
+    set DPD_ID = #{record.dpdId,jdbcType=VARCHAR},
+      DEADLINE_DATE = #{record.deadlineDate,jdbcType=VARCHAR},
+      YEAR_TWODEPT_TOTAL = #{record.yearTwodeptTotal,jdbcType=VARCHAR},
+      BEFYEAR_TWODEPT_TOTAL = #{record.befyearTwodeptTotal,jdbcType=VARCHAR},
+      YEAL_NETWORK_TOTAL = #{record.yealNetworkTotal,jdbcType=VARCHAR},
+      YEAL_NETWORK_COMPLETED = #{record.yealNetworkCompleted,jdbcType=VARCHAR},
+      YEAL_NETWORK_PERCENTAGE = #{record.yealNetworkPercentage,jdbcType=VARCHAR},
+      YEAL_GENERAL_TOTAL = #{record.yealGeneralTotal,jdbcType=VARCHAR},
+      YEAL_GENERAL_COMPLETED = #{record.yealGeneralCompleted,jdbcType=VARCHAR},
+      YEAL_GENERAL_PERCENTAGE = #{record.yealGeneralPercentage,jdbcType=VARCHAR},
+      CREATION_DATE = #{record.creationDate,jdbcType=DATE},
+      CREATED_BY = #{record.createdBy,jdbcType=VARCHAR},
+      LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+      LAST_UPDATED_BY = #{record.lastUpdatedBy,jdbcType=VARCHAR},
+      ENABLE_FLAG = #{record.enableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaDeptPurDemandandpre" >
+    update SCDA_DEPT_PUR_DEMANDANDPRE
+    <set >
+      <if test="deadlineDate != null" >
+        DEADLINE_DATE = #{deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="yearTwodeptTotal != null" >
+        YEAR_TWODEPT_TOTAL = #{yearTwodeptTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="befyearTwodeptTotal != null" >
+        BEFYEAR_TWODEPT_TOTAL = #{befyearTwodeptTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="yealNetworkTotal != null" >
+        YEAL_NETWORK_TOTAL = #{yealNetworkTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="yealNetworkCompleted != null" >
+        YEAL_NETWORK_COMPLETED = #{yealNetworkCompleted,jdbcType=VARCHAR},
+      </if>
+      <if test="yealNetworkPercentage != null" >
+        YEAL_NETWORK_PERCENTAGE = #{yealNetworkPercentage,jdbcType=VARCHAR},
+      </if>
+      <if test="yealGeneralTotal != null" >
+        YEAL_GENERAL_TOTAL = #{yealGeneralTotal,jdbcType=VARCHAR},
+      </if>
+      <if test="yealGeneralCompleted != null" >
+        YEAL_GENERAL_COMPLETED = #{yealGeneralCompleted,jdbcType=VARCHAR},
+      </if>
+      <if test="yealGeneralPercentage != null" >
+        YEAL_GENERAL_PERCENTAGE = #{yealGeneralPercentage,jdbcType=VARCHAR},
+      </if>
+      <if test="creationDate != null" >
+        CREATION_DATE = #{creationDate,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="lastUpdatedBy != null" >
+        LAST_UPDATED_BY = #{lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="enableFlag != null" >
+        ENABLE_FLAG = #{enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where DPD_ID = #{dpdId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaDeptPurDemandandpre" >
+    update SCDA_DEPT_PUR_DEMANDANDPRE
+    set DEADLINE_DATE = #{deadlineDate,jdbcType=VARCHAR},
+      YEAR_TWODEPT_TOTAL = #{yearTwodeptTotal,jdbcType=VARCHAR},
+      BEFYEAR_TWODEPT_TOTAL = #{befyearTwodeptTotal,jdbcType=VARCHAR},
+      YEAL_NETWORK_TOTAL = #{yealNetworkTotal,jdbcType=VARCHAR},
+      YEAL_NETWORK_COMPLETED = #{yealNetworkCompleted,jdbcType=VARCHAR},
+      YEAL_NETWORK_PERCENTAGE = #{yealNetworkPercentage,jdbcType=VARCHAR},
+      YEAL_GENERAL_TOTAL = #{yealGeneralTotal,jdbcType=VARCHAR},
+      YEAL_GENERAL_COMPLETED = #{yealGeneralCompleted,jdbcType=VARCHAR},
+      YEAL_GENERAL_PERCENTAGE = #{yealGeneralPercentage,jdbcType=VARCHAR},
+      CREATION_DATE = #{creationDate,jdbcType=DATE},
+      CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      LAST_UPDATED_BY = #{lastUpdatedBy,jdbcType=VARCHAR},
+      ENABLE_FLAG = #{enableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR}
+    where DPD_ID = #{dpdId,jdbcType=VARCHAR}
+  </update>
+</mapper>

@@ -1,0 +1,13 @@
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\exception\ExceptionCatch.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\web\BaseController.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\model\response\ResultCode.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\model\response\Response.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\interceptor\FeignClientInterceptor.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\model\request\RequestData.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\model\response\ResponseResult.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\model\response\QueryResult.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\client\ScdaServiceList.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\exception\ExceptionCast.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\model\response\CommonCode.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\model\response\QueryResponseResult.java
+E:\BI-SCDA\scda-framework-parent\scda-framework-common\src\main\java\com\pccw\framework\exception\CustomException.java

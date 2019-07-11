@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.purchasecontrol.mapper.ScdaBefyearTwodeptMapper" >
+  <resultMap id="BaseResultMap" type="com.pccw.framework.domain.purchasecontrol.ScdaBefyearTwodept" >
+    <id column="BT_ID" property="btId" jdbcType="VARCHAR" />
+    <result column="DEADLINE_DATE" property="deadlineDate" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_1" property="beforeyear1" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_2" property="beforeyear2" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_3" property="beforeyear3" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_4" property="beforeyear4" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_5" property="beforeyear5" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_6" property="beforeyear6" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_7" property="beforeyear7" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_8" property="beforeyear8" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_9" property="beforeyear9" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_10" property="beforeyear10" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_11" property="beforeyear11" jdbcType="VARCHAR" />
+    <result column="BEFOREYEAR_12" property="beforeyear12" jdbcType="VARCHAR" />
+    <result column="CREATION_DATE" property="creationDate" jdbcType="TIMESTAMP" />
+    <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR" />
+    <result column="LAST_UPDATE_DATE" property="lastUpdateDate" jdbcType="TIMESTAMP" />
+    <result column="LAST_UPDATED_BY" property="lastUpdatedBy" jdbcType="VARCHAR" />
+    <result column="ENABLE_FLAG" property="enableFlag" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE1" property="attribute1" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE2" property="attribute2" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE3" property="attribute3" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE4" property="attribute4" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE5" property="attribute5" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE6" property="attribute6" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE7" property="attribute7" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE8" property="attribute8" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE9" property="attribute9" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE10" property="attribute10" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    BT_ID, DEADLINE_DATE, BEFOREYEAR_1, BEFOREYEAR_2, BEFOREYEAR_3, BEFOREYEAR_4, BEFOREYEAR_5, 
+    BEFOREYEAR_6, BEFOREYEAR_7, BEFOREYEAR_8, BEFOREYEAR_9, BEFOREYEAR_10, BEFOREYEAR_11, 
+    BEFOREYEAR_12, CREATION_DATE, CREATED_BY, LAST_UPDATE_DATE, LAST_UPDATED_BY, ENABLE_FLAG, 
+    ATTRIBUTE1, ATTRIBUTE2, ATTRIBUTE3, ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, ATTRIBUTE7, 
+    ATTRIBUTE8, ATTRIBUTE9, ATTRIBUTE10
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaBefyearTwodeptExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from SCDA_BEFYEAR_TWODEPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from SCDA_BEFYEAR_TWODEPT
+    where BT_ID = #{btId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from SCDA_BEFYEAR_TWODEPT
+    where BT_ID = #{btId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaBefyearTwodeptExample" >
+    delete from SCDA_BEFYEAR_TWODEPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaBefyearTwodept" >
+    insert into SCDA_BEFYEAR_TWODEPT (BT_ID, DEADLINE_DATE, BEFOREYEAR_1, 
+      BEFOREYEAR_2, BEFOREYEAR_3, BEFOREYEAR_4, 
+      BEFOREYEAR_5, BEFOREYEAR_6, BEFOREYEAR_7, 
+      BEFOREYEAR_8, BEFOREYEAR_9, BEFOREYEAR_10, 
+      BEFOREYEAR_11, BEFOREYEAR_12, CREATION_DATE, 
+      CREATED_BY, LAST_UPDATE_DATE, LAST_UPDATED_BY, 
+      ENABLE_FLAG, ATTRIBUTE1, ATTRIBUTE2, 
+      ATTRIBUTE3, ATTRIBUTE4, ATTRIBUTE5, 
+      ATTRIBUTE6, ATTRIBUTE7, ATTRIBUTE8, 
+      ATTRIBUTE9, ATTRIBUTE10)
+    values (#{btId,jdbcType=VARCHAR}, #{deadlineDate,jdbcType=VARCHAR}, #{beforeyear1,jdbcType=VARCHAR}, 
+      #{beforeyear2,jdbcType=VARCHAR}, #{beforeyear3,jdbcType=VARCHAR}, #{beforeyear4,jdbcType=VARCHAR}, 
+      #{beforeyear5,jdbcType=VARCHAR}, #{beforeyear6,jdbcType=VARCHAR}, #{beforeyear7,jdbcType=VARCHAR}, 
+      #{beforeyear8,jdbcType=VARCHAR}, #{beforeyear9,jdbcType=VARCHAR}, #{beforeyear10,jdbcType=VARCHAR}, 
+      #{beforeyear11,jdbcType=VARCHAR}, #{beforeyear12,jdbcType=VARCHAR}, #{creationDate,jdbcType=DATE}, 
+      #{createdBy,jdbcType=VARCHAR}, #{lastUpdateDate,jdbcType=DATE}, #{lastUpdatedBy,jdbcType=VARCHAR}, 
+      #{enableFlag,jdbcType=VARCHAR}, #{attribute1,jdbcType=VARCHAR}, #{attribute2,jdbcType=VARCHAR}, 
+      #{attribute3,jdbcType=VARCHAR}, #{attribute4,jdbcType=VARCHAR}, #{attribute5,jdbcType=VARCHAR}, 
+      #{attribute6,jdbcType=VARCHAR}, #{attribute7,jdbcType=VARCHAR}, #{attribute8,jdbcType=VARCHAR}, 
+      #{attribute9,jdbcType=VARCHAR}, #{attribute10,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaBefyearTwodept" >
+    insert into SCDA_BEFYEAR_TWODEPT
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="btId != null" >
+        BT_ID,
+      </if>
+      <if test="deadlineDate != null" >
+        DEADLINE_DATE,
+      </if>
+      <if test="beforeyear1 != null" >
+        BEFOREYEAR_1,
+      </if>
+      <if test="beforeyear2 != null" >
+        BEFOREYEAR_2,
+      </if>
+      <if test="beforeyear3 != null" >
+        BEFOREYEAR_3,
+      </if>
+      <if test="beforeyear4 != null" >
+        BEFOREYEAR_4,
+      </if>
+      <if test="beforeyear5 != null" >
+        BEFOREYEAR_5,
+      </if>
+      <if test="beforeyear6 != null" >
+        BEFOREYEAR_6,
+      </if>
+      <if test="beforeyear7 != null" >
+        BEFOREYEAR_7,
+      </if>
+      <if test="beforeyear8 != null" >
+        BEFOREYEAR_8,
+      </if>
+      <if test="beforeyear9 != null" >
+        BEFOREYEAR_9,
+      </if>
+      <if test="beforeyear10 != null" >
+        BEFOREYEAR_10,
+      </if>
+      <if test="beforeyear11 != null" >
+        BEFOREYEAR_11,
+      </if>
+      <if test="beforeyear12 != null" >
+        BEFOREYEAR_12,
+      </if>
+      <if test="creationDate != null" >
+        CREATION_DATE,
+      </if>
+      <if test="createdBy != null" >
+        CREATED_BY,
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE,
+      </if>
+      <if test="lastUpdatedBy != null" >
+        LAST_UPDATED_BY,
+      </if>
+      <if test="enableFlag != null" >
+        ENABLE_FLAG,
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1,
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2,
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3,
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4,
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5,
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6,
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7,
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8,
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9,
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="btId != null" >
+        #{btId,jdbcType=VARCHAR},
+      </if>
+      <if test="deadlineDate != null" >
+        #{deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear1 != null" >
+        #{beforeyear1,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear2 != null" >
+        #{beforeyear2,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear3 != null" >
+        #{beforeyear3,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear4 != null" >
+        #{beforeyear4,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear5 != null" >
+        #{beforeyear5,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear6 != null" >
+        #{beforeyear6,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear7 != null" >
+        #{beforeyear7,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear8 != null" >
+        #{beforeyear8,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear9 != null" >
+        #{beforeyear9,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear10 != null" >
+        #{beforeyear10,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear11 != null" >
+        #{beforeyear11,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear12 != null" >
+        #{beforeyear12,jdbcType=VARCHAR},
+      </if>
+      <if test="creationDate != null" >
+        #{creationDate,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="lastUpdatedBy != null" >
+        #{lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="enableFlag != null" >
+        #{enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaBefyearTwodeptExample" resultType="java.lang.Integer" >
+    select count(*) from SCDA_BEFYEAR_TWODEPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update SCDA_BEFYEAR_TWODEPT
+    <set >
+      <if test="record.btId != null" >
+        BT_ID = #{record.btId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deadlineDate != null" >
+        DEADLINE_DATE = #{record.deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear1 != null" >
+        BEFOREYEAR_1 = #{record.beforeyear1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear2 != null" >
+        BEFOREYEAR_2 = #{record.beforeyear2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear3 != null" >
+        BEFOREYEAR_3 = #{record.beforeyear3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear4 != null" >
+        BEFOREYEAR_4 = #{record.beforeyear4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear5 != null" >
+        BEFOREYEAR_5 = #{record.beforeyear5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear6 != null" >
+        BEFOREYEAR_6 = #{record.beforeyear6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear7 != null" >
+        BEFOREYEAR_7 = #{record.beforeyear7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear8 != null" >
+        BEFOREYEAR_8 = #{record.beforeyear8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear9 != null" >
+        BEFOREYEAR_9 = #{record.beforeyear9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear10 != null" >
+        BEFOREYEAR_10 = #{record.beforeyear10,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear11 != null" >
+        BEFOREYEAR_11 = #{record.beforeyear11,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeyear12 != null" >
+        BEFOREYEAR_12 = #{record.beforeyear12,jdbcType=VARCHAR},
+      </if>
+      <if test="record.creationDate != null" >
+        CREATION_DATE = #{record.creationDate,jdbcType=DATE},
+      </if>
+      <if test="record.createdBy != null" >
+        CREATED_BY = #{record.createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="record.lastUpdatedBy != null" >
+        LAST_UPDATED_BY = #{record.lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.enableFlag != null" >
+        ENABLE_FLAG = #{record.enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute1 != null" >
+        ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute2 != null" >
+        ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute3 != null" >
+        ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute4 != null" >
+        ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute5 != null" >
+        ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute6 != null" >
+        ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute7 != null" >
+        ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute8 != null" >
+        ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute9 != null" >
+        ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute10 != null" >
+        ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update SCDA_BEFYEAR_TWODEPT
+    set BT_ID = #{record.btId,jdbcType=VARCHAR},
+      DEADLINE_DATE = #{record.deadlineDate,jdbcType=VARCHAR},
+      BEFOREYEAR_1 = #{record.beforeyear1,jdbcType=VARCHAR},
+      BEFOREYEAR_2 = #{record.beforeyear2,jdbcType=VARCHAR},
+      BEFOREYEAR_3 = #{record.beforeyear3,jdbcType=VARCHAR},
+      BEFOREYEAR_4 = #{record.beforeyear4,jdbcType=VARCHAR},
+      BEFOREYEAR_5 = #{record.beforeyear5,jdbcType=VARCHAR},
+      BEFOREYEAR_6 = #{record.beforeyear6,jdbcType=VARCHAR},
+      BEFOREYEAR_7 = #{record.beforeyear7,jdbcType=VARCHAR},
+      BEFOREYEAR_8 = #{record.beforeyear8,jdbcType=VARCHAR},
+      BEFOREYEAR_9 = #{record.beforeyear9,jdbcType=VARCHAR},
+      BEFOREYEAR_10 = #{record.beforeyear10,jdbcType=VARCHAR},
+      BEFOREYEAR_11 = #{record.beforeyear11,jdbcType=VARCHAR},
+      BEFOREYEAR_12 = #{record.beforeyear12,jdbcType=VARCHAR},
+      CREATION_DATE = #{record.creationDate,jdbcType=DATE},
+      CREATED_BY = #{record.createdBy,jdbcType=VARCHAR},
+      LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+      LAST_UPDATED_BY = #{record.lastUpdatedBy,jdbcType=VARCHAR},
+      ENABLE_FLAG = #{record.enableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaBefyearTwodept" >
+    update SCDA_BEFYEAR_TWODEPT
+    <set >
+      <if test="deadlineDate != null" >
+        DEADLINE_DATE = #{deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear1 != null" >
+        BEFOREYEAR_1 = #{beforeyear1,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear2 != null" >
+        BEFOREYEAR_2 = #{beforeyear2,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear3 != null" >
+        BEFOREYEAR_3 = #{beforeyear3,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear4 != null" >
+        BEFOREYEAR_4 = #{beforeyear4,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear5 != null" >
+        BEFOREYEAR_5 = #{beforeyear5,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear6 != null" >
+        BEFOREYEAR_6 = #{beforeyear6,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear7 != null" >
+        BEFOREYEAR_7 = #{beforeyear7,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear8 != null" >
+        BEFOREYEAR_8 = #{beforeyear8,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear9 != null" >
+        BEFOREYEAR_9 = #{beforeyear9,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear10 != null" >
+        BEFOREYEAR_10 = #{beforeyear10,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear11 != null" >
+        BEFOREYEAR_11 = #{beforeyear11,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeyear12 != null" >
+        BEFOREYEAR_12 = #{beforeyear12,jdbcType=VARCHAR},
+      </if>
+      <if test="creationDate != null" >
+        CREATION_DATE = #{creationDate,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="lastUpdatedBy != null" >
+        LAST_UPDATED_BY = #{lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="enableFlag != null" >
+        ENABLE_FLAG = #{enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where BT_ID = #{btId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pccw.framework.domain.purchasecontrol.ScdaBefyearTwodept" >
+    update SCDA_BEFYEAR_TWODEPT
+    set DEADLINE_DATE = #{deadlineDate,jdbcType=VARCHAR},
+      BEFOREYEAR_1 = #{beforeyear1,jdbcType=VARCHAR},
+      BEFOREYEAR_2 = #{beforeyear2,jdbcType=VARCHAR},
+      BEFOREYEAR_3 = #{beforeyear3,jdbcType=VARCHAR},
+      BEFOREYEAR_4 = #{beforeyear4,jdbcType=VARCHAR},
+      BEFOREYEAR_5 = #{beforeyear5,jdbcType=VARCHAR},
+      BEFOREYEAR_6 = #{beforeyear6,jdbcType=VARCHAR},
+      BEFOREYEAR_7 = #{beforeyear7,jdbcType=VARCHAR},
+      BEFOREYEAR_8 = #{beforeyear8,jdbcType=VARCHAR},
+      BEFOREYEAR_9 = #{beforeyear9,jdbcType=VARCHAR},
+      BEFOREYEAR_10 = #{beforeyear10,jdbcType=VARCHAR},
+      BEFOREYEAR_11 = #{beforeyear11,jdbcType=VARCHAR},
+      BEFOREYEAR_12 = #{beforeyear12,jdbcType=VARCHAR},
+      CREATION_DATE = #{creationDate,jdbcType=DATE},
+      CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      LAST_UPDATED_BY = #{lastUpdatedBy,jdbcType=VARCHAR},
+      ENABLE_FLAG = #{enableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR}
+    where BT_ID = #{btId,jdbcType=VARCHAR}
+  </update>
+</mapper>

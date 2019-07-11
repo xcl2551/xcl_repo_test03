@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.purchaseexecute.mapper.ScdaActuallyOccurredBaseMapper" >
+  <resultMap id="BaseResultMap" type="com.pccw.framework.domain.purchaseexecute.ScdaActuallyOccurredBase" >
+    <id column="SAOB_ID" property="saobId" jdbcType="VARCHAR" />
+    <result column="PROVINCIAL_COMPANY_CODE" property="provincialCompanyCode" jdbcType="VARCHAR" />
+    <result column="ORG_IDENTIFY" property="orgIdentify" jdbcType="VARCHAR" />
+    <result column="PO_TYPE" property="poType" jdbcType="VARCHAR" />
+    <result column="CONTRACT_DRAFTING_DEPT" property="contractDraftingDept" jdbcType="VARCHAR" />
+    <result column="ORDER_TOTAL_AMOUNT" property="orderTotalAmount" jdbcType="DECIMAL" />
+    <result column="CONTRACT_NUMBER" property="contractNumber" jdbcType="VARCHAR" />
+    <result column="UNIFIED_SUPPLIER_CODE" property="unifiedSupplierCode" jdbcType="VARCHAR" />
+    <result column="SUPPLIER_NUMBER" property="supplierNumber" jdbcType="VARCHAR" />
+    <result column="SUPPLIER_NAME" property="supplierName" jdbcType="VARCHAR" />
+    <result column="HQ_FRAMEWORK_CONTRACT" property="hqFrameworkContract" jdbcType="VARCHAR" />
+    <result column="PO_HEADER_ID" property="poHeaderId" jdbcType="VARCHAR" />
+    <result column="SEGMENT1" property="segment1" jdbcType="VARCHAR" />
+    <result column="ES_PROJECT_NUMBER" property="esProjectNumber" jdbcType="VARCHAR" />
+    <result column="LAST_UPDATE_DATE" property="lastUpdateDate" jdbcType="TIMESTAMP" />
+    <result column="ATTRIBUTE_CATEGORY" property="attributeCategory" jdbcType="VARCHAR" />
+    <result column="CONTRACT_WAY" property="contractWay" jdbcType="VARCHAR" />
+    <result column="STATUS_LOOKUP_CODE" property="statusLookupCode" jdbcType="VARCHAR" />
+    <result column="BIG_KIND" property="bigKind" jdbcType="VARCHAR" />
+    <result column="CENTER_KIND" property="centerKind" jdbcType="VARCHAR" />
+    <result column="SMALL_KIND" property="smallKind" jdbcType="VARCHAR" />
+    <result column="PRODUCT_NAME" property="productName" jdbcType="VARCHAR" />
+    <result column="IS_ELIMINATION" property="isElimination" jdbcType="VARCHAR" />
+    <result column="IS_BLOC_ELIMINATION" property="isBlocElimination" jdbcType="VARCHAR" />
+    <result column="EXPLAIN" property="explain" jdbcType="VARCHAR" />
+    <result column="SAOB_CREATION_DATE" property="saobCreationDate" jdbcType="TIMESTAMP" />
+    <result column="SAOB_CREATED_BY" property="saobCreatedBy" jdbcType="VARCHAR" />
+    <result column="SAOB_LAST_UPDATE_DATE" property="saobLastUpdateDate" jdbcType="TIMESTAMP" />
+    <result column="SAOB_LAST_UPDATED_BY" property="saobLastUpdatedBy" jdbcType="VARCHAR" />
+    <result column="SAOB_ENABLE_FLAG" property="saobEnableFlag" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE1" property="attribute1" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE2" property="attribute2" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE3" property="attribute3" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE4" property="attribute4" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE5" property="attribute5" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE6" property="attribute6" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE7" property="attribute7" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE8" property="attribute8" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE9" property="attribute9" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE10" property="attribute10" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    SAOB_ID, PROVINCIAL_COMPANY_CODE, ORG_IDENTIFY, PO_TYPE, CONTRACT_DRAFTING_DEPT,
+    ORDER_TOTAL_AMOUNT, CONTRACT_NUMBER, UNIFIED_SUPPLIER_CODE, SUPPLIER_NUMBER, SUPPLIER_NAME,
+    HQ_FRAMEWORK_CONTRACT, PO_HEADER_ID, SEGMENT1, ES_PROJECT_NUMBER, LAST_UPDATE_DATE,
+    ATTRIBUTE_CATEGORY, CONTRACT_WAY, STATUS_LOOKUP_CODE, BIG_KIND, CENTER_KIND, SMALL_KIND,
+    PRODUCT_NAME, IS_ELIMINATION, IS_BLOC_ELIMINATION, EXPLAIN, SAOB_CREATION_DATE, SAOB_CREATED_BY,
+    SAOB_LAST_UPDATE_DATE, SAOB_LAST_UPDATED_BY, SAOB_ENABLE_FLAG, ATTRIBUTE1, ATTRIBUTE2,
+    ATTRIBUTE3, ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9,
+    ATTRIBUTE10
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaActuallyOccurredBaseExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from SCDA_ACTUALLY_OCCURRED_BASE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from SCDA_ACTUALLY_OCCURRED_BASE
+    where SAOB_ID = #{saobId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from SCDA_ACTUALLY_OCCURRED_BASE
+    where SAOB_ID = #{saobId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaActuallyOccurredBaseExample" >
+    delete from SCDA_ACTUALLY_OCCURRED_BASE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaActuallyOccurredBase" >
+    insert into SCDA_ACTUALLY_OCCURRED_BASE (SAOB_ID, PROVINCIAL_COMPANY_CODE, ORG_IDENTIFY,
+    PO_TYPE, CONTRACT_DRAFTING_DEPT, ORDER_TOTAL_AMOUNT,
+    CONTRACT_NUMBER, UNIFIED_SUPPLIER_CODE, SUPPLIER_NUMBER,
+    SUPPLIER_NAME, HQ_FRAMEWORK_CONTRACT, PO_HEADER_ID,
+    SEGMENT1, ES_PROJECT_NUMBER, LAST_UPDATE_DATE,
+    ATTRIBUTE_CATEGORY, CONTRACT_WAY, STATUS_LOOKUP_CODE,
+    BIG_KIND, CENTER_KIND, SMALL_KIND,
+    PRODUCT_NAME, IS_ELIMINATION, IS_BLOC_ELIMINATION,
+    EXPLAIN, SAOB_CREATION_DATE, SAOB_CREATED_BY,
+    SAOB_LAST_UPDATE_DATE, SAOB_LAST_UPDATED_BY, SAOB_ENABLE_FLAG,
+    ATTRIBUTE1, ATTRIBUTE2, ATTRIBUTE3,
+    ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6,
+    ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9,
+    ATTRIBUTE10)
+    values (#{saobId,jdbcType=VARCHAR}, #{provincialCompanyCode,jdbcType=VARCHAR}, #{orgIdentify,jdbcType=VARCHAR},
+    #{poType,jdbcType=VARCHAR}, #{contractDraftingDept,jdbcType=VARCHAR}, #{orderTotalAmount,jdbcType=DECIMAL},
+    #{contractNumber,jdbcType=VARCHAR}, #{unifiedSupplierCode,jdbcType=VARCHAR}, #{supplierNumber,jdbcType=VARCHAR},
+    #{supplierName,jdbcType=VARCHAR}, #{hqFrameworkContract,jdbcType=VARCHAR}, #{poHeaderId,jdbcType=VARCHAR},
+    #{segment1,jdbcType=VARCHAR}, #{esProjectNumber,jdbcType=VARCHAR}, #{lastUpdateDate,jdbcType=DATE},
+    #{attributeCategory,jdbcType=VARCHAR}, #{contractWay,jdbcType=VARCHAR}, #{statusLookupCode,jdbcType=VARCHAR},
+    #{bigKind,jdbcType=VARCHAR}, #{centerKind,jdbcType=VARCHAR}, #{smallKind,jdbcType=VARCHAR},
+    #{productName,jdbcType=VARCHAR}, #{isElimination,jdbcType=VARCHAR}, #{isBlocElimination,jdbcType=VARCHAR},
+    #{explain,jdbcType=VARCHAR}, #{saobCreationDate,jdbcType=DATE}, #{saobCreatedBy,jdbcType=VARCHAR},
+    #{saobLastUpdateDate,jdbcType=DATE}, #{saobLastUpdatedBy,jdbcType=VARCHAR}, #{saobEnableFlag,jdbcType=VARCHAR},
+    #{attribute1,jdbcType=VARCHAR}, #{attribute2,jdbcType=VARCHAR}, #{attribute3,jdbcType=VARCHAR},
+    #{attribute4,jdbcType=VARCHAR}, #{attribute5,jdbcType=VARCHAR}, #{attribute6,jdbcType=VARCHAR},
+    #{attribute7,jdbcType=VARCHAR}, #{attribute8,jdbcType=VARCHAR}, #{attribute9,jdbcType=VARCHAR},
+    #{attribute10,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaActuallyOccurredBase" >
+    insert into SCDA_ACTUALLY_OCCURRED_BASE
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="saobId != null" >
+        SAOB_ID,
+      </if>
+      <if test="provincialCompanyCode != null" >
+        PROVINCIAL_COMPANY_CODE,
+      </if>
+      <if test="orgIdentify != null" >
+        ORG_IDENTIFY,
+      </if>
+      <if test="poType != null" >
+        PO_TYPE,
+      </if>
+      <if test="contractDraftingDept != null" >
+        CONTRACT_DRAFTING_DEPT,
+      </if>
+      <if test="orderTotalAmount != null" >
+        ORDER_TOTAL_AMOUNT,
+      </if>
+      <if test="contractNumber != null" >
+        CONTRACT_NUMBER,
+      </if>
+      <if test="unifiedSupplierCode != null" >
+        UNIFIED_SUPPLIER_CODE,
+      </if>
+      <if test="supplierNumber != null" >
+        SUPPLIER_NUMBER,
+      </if>
+      <if test="supplierName != null" >
+        SUPPLIER_NAME,
+      </if>
+      <if test="hqFrameworkContract != null" >
+        HQ_FRAMEWORK_CONTRACT,
+      </if>
+      <if test="poHeaderId != null" >
+        PO_HEADER_ID,
+      </if>
+      <if test="segment1 != null" >
+        SEGMENT1,
+      </if>
+      <if test="esProjectNumber != null" >
+        ES_PROJECT_NUMBER,
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE,
+      </if>
+      <if test="attributeCategory != null" >
+        ATTRIBUTE_CATEGORY,
+      </if>
+      <if test="contractWay != null" >
+        CONTRACT_WAY,
+      </if>
+      <if test="statusLookupCode != null" >
+        STATUS_LOOKUP_CODE,
+      </if>
+      <if test="bigKind != null" >
+        BIG_KIND,
+      </if>
+      <if test="centerKind != null" >
+        CENTER_KIND,
+      </if>
+      <if test="smallKind != null" >
+        SMALL_KIND,
+      </if>
+      <if test="productName != null" >
+        PRODUCT_NAME,
+      </if>
+      <if test="isElimination != null" >
+        IS_ELIMINATION,
+      </if>
+      <if test="isBlocElimination != null" >
+        IS_BLOC_ELIMINATION,
+      </if>
+      <if test="explain != null" >
+        EXPLAIN,
+      </if>
+      <if test="saobCreationDate != null" >
+        SAOB_CREATION_DATE,
+      </if>
+      <if test="saobCreatedBy != null" >
+        SAOB_CREATED_BY,
+      </if>
+      <if test="saobLastUpdateDate != null" >
+        SAOB_LAST_UPDATE_DATE,
+      </if>
+      <if test="saobLastUpdatedBy != null" >
+        SAOB_LAST_UPDATED_BY,
+      </if>
+      <if test="saobEnableFlag != null" >
+        SAOB_ENABLE_FLAG,
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1,
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2,
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3,
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4,
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5,
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6,
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7,
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8,
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9,
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="saobId != null" >
+        #{saobId,jdbcType=VARCHAR},
+      </if>
+      <if test="provincialCompanyCode != null" >
+        #{provincialCompanyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgIdentify != null" >
+        #{orgIdentify,jdbcType=VARCHAR},
+      </if>
+      <if test="poType != null" >
+        #{poType,jdbcType=VARCHAR},
+      </if>
+      <if test="contractDraftingDept != null" >
+        #{contractDraftingDept,jdbcType=VARCHAR},
+      </if>
+      <if test="orderTotalAmount != null" >
+        #{orderTotalAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="contractNumber != null" >
+        #{contractNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="unifiedSupplierCode != null" >
+        #{unifiedSupplierCode,jdbcType=VARCHAR},
+      </if>
+      <if test="supplierNumber != null" >
+        #{supplierNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="supplierName != null" >
+        #{supplierName,jdbcType=VARCHAR},
+      </if>
+      <if test="hqFrameworkContract != null" >
+        #{hqFrameworkContract,jdbcType=VARCHAR},
+      </if>
+      <if test="poHeaderId != null" >
+        #{poHeaderId,jdbcType=VARCHAR},
+      </if>
+      <if test="segment1 != null" >
+        #{segment1,jdbcType=VARCHAR},
+      </if>
+      <if test="esProjectNumber != null" >
+        #{esProjectNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="attributeCategory != null" >
+        #{attributeCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="contractWay != null" >
+        #{contractWay,jdbcType=VARCHAR},
+      </if>
+      <if test="statusLookupCode != null" >
+        #{statusLookupCode,jdbcType=VARCHAR},
+      </if>
+      <if test="bigKind != null" >
+        #{bigKind,jdbcType=VARCHAR},
+      </if>
+      <if test="centerKind != null" >
+        #{centerKind,jdbcType=VARCHAR},
+      </if>
+      <if test="smallKind != null" >
+        #{smallKind,jdbcType=VARCHAR},
+      </if>
+      <if test="productName != null" >
+        #{productName,jdbcType=VARCHAR},
+      </if>
+      <if test="isElimination != null" >
+        #{isElimination,jdbcType=VARCHAR},
+      </if>
+      <if test="isBlocElimination != null" >
+        #{isBlocElimination,jdbcType=VARCHAR},
+      </if>
+      <if test="explain != null" >
+        #{explain,jdbcType=VARCHAR},
+      </if>
+      <if test="saobCreationDate != null" >
+        #{saobCreationDate,jdbcType=DATE},
+      </if>
+      <if test="saobCreatedBy != null" >
+        #{saobCreatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="saobLastUpdateDate != null" >
+        #{saobLastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="saobLastUpdatedBy != null" >
+        #{saobLastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="saobEnableFlag != null" >
+        #{saobEnableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaActuallyOccurredBaseExample" resultType="java.lang.Integer" >
+    select count(*) from SCDA_ACTUALLY_OCCURRED_BASE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update SCDA_ACTUALLY_OCCURRED_BASE
+    <set >
+      <if test="record.saobId != null" >
+        SAOB_ID = #{record.saobId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.provincialCompanyCode != null" >
+        PROVINCIAL_COMPANY_CODE = #{record.provincialCompanyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orgIdentify != null" >
+        ORG_IDENTIFY = #{record.orgIdentify,jdbcType=VARCHAR},
+      </if>
+      <if test="record.poType != null" >
+        PO_TYPE = #{record.poType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.contractDraftingDept != null" >
+        CONTRACT_DRAFTING_DEPT = #{record.contractDraftingDept,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderTotalAmount != null" >
+        ORDER_TOTAL_AMOUNT = #{record.orderTotalAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="record.contractNumber != null" >
+        CONTRACT_NUMBER = #{record.contractNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.unifiedSupplierCode != null" >
+        UNIFIED_SUPPLIER_CODE = #{record.unifiedSupplierCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.supplierNumber != null" >
+        SUPPLIER_NUMBER = #{record.supplierNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.supplierName != null" >
+        SUPPLIER_NAME = #{record.supplierName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hqFrameworkContract != null" >
+        HQ_FRAMEWORK_CONTRACT = #{record.hqFrameworkContract,jdbcType=VARCHAR},
+      </if>
+      <if test="record.poHeaderId != null" >
+        PO_HEADER_ID = #{record.poHeaderId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.segment1 != null" >
+        SEGMENT1 = #{record.segment1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.esProjectNumber != null" >
+        ES_PROJECT_NUMBER = #{record.esProjectNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="record.attributeCategory != null" >
+        ATTRIBUTE_CATEGORY = #{record.attributeCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="record.contractWay != null" >
+        CONTRACT_WAY = #{record.contractWay,jdbcType=VARCHAR},
+      </if>
+      <if test="record.statusLookupCode != null" >
+        STATUS_LOOKUP_CODE = #{record.statusLookupCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bigKind != null" >
+        BIG_KIND = #{record.bigKind,jdbcType=VARCHAR},
+      </if>
+      <if test="record.centerKind != null" >
+        CENTER_KIND = #{record.centerKind,jdbcType=VARCHAR},
+      </if>
+      <if test="record.smallKind != null" >
+        SMALL_KIND = #{record.smallKind,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productName != null" >
+        PRODUCT_NAME = #{record.productName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isElimination != null" >
+        IS_ELIMINATION = #{record.isElimination,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isBlocElimination != null" >
+        IS_BLOC_ELIMINATION = #{record.isBlocElimination,jdbcType=VARCHAR},
+      </if>
+      <if test="record.explain != null" >
+        EXPLAIN = #{record.explain,jdbcType=VARCHAR},
+      </if>
+      <if test="record.saobCreationDate != null" >
+        SAOB_CREATION_DATE = #{record.saobCreationDate,jdbcType=DATE},
+      </if>
+      <if test="record.saobCreatedBy != null" >
+        SAOB_CREATED_BY = #{record.saobCreatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.saobLastUpdateDate != null" >
+        SAOB_LAST_UPDATE_DATE = #{record.saobLastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="record.saobLastUpdatedBy != null" >
+        SAOB_LAST_UPDATED_BY = #{record.saobLastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.saobEnableFlag != null" >
+        SAOB_ENABLE_FLAG = #{record.saobEnableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute1 != null" >
+        ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute2 != null" >
+        ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute3 != null" >
+        ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute4 != null" >
+        ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute5 != null" >
+        ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute6 != null" >
+        ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute7 != null" >
+        ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute8 != null" >
+        ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute9 != null" >
+        ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute10 != null" >
+        ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update SCDA_ACTUALLY_OCCURRED_BASE
+    set SAOB_ID = #{record.saobId,jdbcType=VARCHAR},
+    PROVINCIAL_COMPANY_CODE = #{record.provincialCompanyCode,jdbcType=VARCHAR},
+    ORG_IDENTIFY = #{record.orgIdentify,jdbcType=VARCHAR},
+    PO_TYPE = #{record.poType,jdbcType=VARCHAR},
+    CONTRACT_DRAFTING_DEPT = #{record.contractDraftingDept,jdbcType=VARCHAR},
+    ORDER_TOTAL_AMOUNT = #{record.orderTotalAmount,jdbcType=DECIMAL},
+    CONTRACT_NUMBER = #{record.contractNumber,jdbcType=VARCHAR},
+    UNIFIED_SUPPLIER_CODE = #{record.unifiedSupplierCode,jdbcType=VARCHAR},
+    SUPPLIER_NUMBER = #{record.supplierNumber,jdbcType=VARCHAR},
+    SUPPLIER_NAME = #{record.supplierName,jdbcType=VARCHAR},
+    HQ_FRAMEWORK_CONTRACT = #{record.hqFrameworkContract,jdbcType=VARCHAR},
+    PO_HEADER_ID = #{record.poHeaderId,jdbcType=VARCHAR},
+    SEGMENT1 = #{record.segment1,jdbcType=VARCHAR},
+    ES_PROJECT_NUMBER = #{record.esProjectNumber,jdbcType=VARCHAR},
+    LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+    ATTRIBUTE_CATEGORY = #{record.attributeCategory,jdbcType=VARCHAR},
+    CONTRACT_WAY = #{record.contractWay,jdbcType=VARCHAR},
+    STATUS_LOOKUP_CODE = #{record.statusLookupCode,jdbcType=VARCHAR},
+    BIG_KIND = #{record.bigKind,jdbcType=VARCHAR},
+    CENTER_KIND = #{record.centerKind,jdbcType=VARCHAR},
+    SMALL_KIND = #{record.smallKind,jdbcType=VARCHAR},
+    PRODUCT_NAME = #{record.productName,jdbcType=VARCHAR},
+    IS_ELIMINATION = #{record.isElimination,jdbcType=VARCHAR},
+    IS_BLOC_ELIMINATION = #{record.isBlocElimination,jdbcType=VARCHAR},
+    EXPLAIN = #{record.explain,jdbcType=VARCHAR},
+    SAOB_CREATION_DATE = #{record.saobCreationDate,jdbcType=DATE},
+    SAOB_CREATED_BY = #{record.saobCreatedBy,jdbcType=VARCHAR},
+    SAOB_LAST_UPDATE_DATE = #{record.saobLastUpdateDate,jdbcType=DATE},
+    SAOB_LAST_UPDATED_BY = #{record.saobLastUpdatedBy,jdbcType=VARCHAR},
+    SAOB_ENABLE_FLAG = #{record.saobEnableFlag,jdbcType=VARCHAR},
+    ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+    ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+    ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+    ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+    ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+    ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+    ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+    ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+    ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+    ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaActuallyOccurredBase" >
+    update SCDA_ACTUALLY_OCCURRED_BASE
+    <set >
+      <if test="provincialCompanyCode != null" >
+        PROVINCIAL_COMPANY_CODE = #{provincialCompanyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgIdentify != null" >
+        ORG_IDENTIFY = #{orgIdentify,jdbcType=VARCHAR},
+      </if>
+      <if test="poType != null" >
+        PO_TYPE = #{poType,jdbcType=VARCHAR},
+      </if>
+      <if test="contractDraftingDept != null" >
+        CONTRACT_DRAFTING_DEPT = #{contractDraftingDept,jdbcType=VARCHAR},
+      </if>
+      <if test="orderTotalAmount != null" >
+        ORDER_TOTAL_AMOUNT = #{orderTotalAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="contractNumber != null" >
+        CONTRACT_NUMBER = #{contractNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="unifiedSupplierCode != null" >
+        UNIFIED_SUPPLIER_CODE = #{unifiedSupplierCode,jdbcType=VARCHAR},
+      </if>
+      <if test="supplierNumber != null" >
+        SUPPLIER_NUMBER = #{supplierNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="supplierName != null" >
+        SUPPLIER_NAME = #{supplierName,jdbcType=VARCHAR},
+      </if>
+      <if test="hqFrameworkContract != null" >
+        HQ_FRAMEWORK_CONTRACT = #{hqFrameworkContract,jdbcType=VARCHAR},
+      </if>
+      <if test="poHeaderId != null" >
+        PO_HEADER_ID = #{poHeaderId,jdbcType=VARCHAR},
+      </if>
+      <if test="segment1 != null" >
+        SEGMENT1 = #{segment1,jdbcType=VARCHAR},
+      </if>
+      <if test="esProjectNumber != null" >
+        ES_PROJECT_NUMBER = #{esProjectNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="attributeCategory != null" >
+        ATTRIBUTE_CATEGORY = #{attributeCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="contractWay != null" >
+        CONTRACT_WAY = #{contractWay,jdbcType=VARCHAR},
+      </if>
+      <if test="statusLookupCode != null" >
+        STATUS_LOOKUP_CODE = #{statusLookupCode,jdbcType=VARCHAR},
+      </if>
+      <if test="bigKind != null" >
+        BIG_KIND = #{bigKind,jdbcType=VARCHAR},
+      </if>
+      <if test="centerKind != null" >
+        CENTER_KIND = #{centerKind,jdbcType=VARCHAR},
+      </if>
+      <if test="smallKind != null" >
+        SMALL_KIND = #{smallKind,jdbcType=VARCHAR},
+      </if>
+      <if test="productName != null" >
+        PRODUCT_NAME = #{productName,jdbcType=VARCHAR},
+      </if>
+      <if test="isElimination != null" >
+        IS_ELIMINATION = #{isElimination,jdbcType=VARCHAR},
+      </if>
+      <if test="isBlocElimination != null" >
+        IS_BLOC_ELIMINATION = #{isBlocElimination,jdbcType=VARCHAR},
+      </if>
+      <if test="explain != null" >
+        EXPLAIN = #{explain,jdbcType=VARCHAR},
+      </if>
+      <if test="saobCreationDate != null" >
+        SAOB_CREATION_DATE = #{saobCreationDate,jdbcType=DATE},
+      </if>
+      <if test="saobCreatedBy != null" >
+        SAOB_CREATED_BY = #{saobCreatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="saobLastUpdateDate != null" >
+        SAOB_LAST_UPDATE_DATE = #{saobLastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="saobLastUpdatedBy != null" >
+        SAOB_LAST_UPDATED_BY = #{saobLastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="saobEnableFlag != null" >
+        SAOB_ENABLE_FLAG = #{saobEnableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where SAOB_ID = #{saobId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pccw.framework.domain.purchaseexecute.ScdaActuallyOccurredBase" >
+    update SCDA_ACTUALLY_OCCURRED_BASE
+    set PROVINCIAL_COMPANY_CODE = #{provincialCompanyCode,jdbcType=VARCHAR},
+    ORG_IDENTIFY = #{orgIdentify,jdbcType=VARCHAR},
+    PO_TYPE = #{poType,jdbcType=VARCHAR},
+    CONTRACT_DRAFTING_DEPT = #{contractDraftingDept,jdbcType=VARCHAR},
+    ORDER_TOTAL_AMOUNT = #{orderTotalAmount,jdbcType=DECIMAL},
+    CONTRACT_NUMBER = #{contractNumber,jdbcType=VARCHAR},
+    UNIFIED_SUPPLIER_CODE = #{unifiedSupplierCode,jdbcType=VARCHAR},
+    SUPPLIER_NUMBER = #{supplierNumber,jdbcType=VARCHAR},
+    SUPPLIER_NAME = #{supplierName,jdbcType=VARCHAR},
+    HQ_FRAMEWORK_CONTRACT = #{hqFrameworkContract,jdbcType=VARCHAR},
+    PO_HEADER_ID = #{poHeaderId,jdbcType=VARCHAR},
+    SEGMENT1 = #{segment1,jdbcType=VARCHAR},
+    ES_PROJECT_NUMBER = #{esProjectNumber,jdbcType=VARCHAR},
+    LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+    ATTRIBUTE_CATEGORY = #{attributeCategory,jdbcType=VARCHAR},
+    CONTRACT_WAY = #{contractWay,jdbcType=VARCHAR},
+    STATUS_LOOKUP_CODE = #{statusLookupCode,jdbcType=VARCHAR},
+    BIG_KIND = #{bigKind,jdbcType=VARCHAR},
+    CENTER_KIND = #{centerKind,jdbcType=VARCHAR},
+    SMALL_KIND = #{smallKind,jdbcType=VARCHAR},
+    PRODUCT_NAME = #{productName,jdbcType=VARCHAR},
+    IS_ELIMINATION = #{isElimination,jdbcType=VARCHAR},
+    IS_BLOC_ELIMINATION = #{isBlocElimination,jdbcType=VARCHAR},
+    EXPLAIN = #{explain,jdbcType=VARCHAR},
+    SAOB_CREATION_DATE = #{saobCreationDate,jdbcType=DATE},
+    SAOB_CREATED_BY = #{saobCreatedBy,jdbcType=VARCHAR},
+    SAOB_LAST_UPDATE_DATE = #{saobLastUpdateDate,jdbcType=DATE},
+    SAOB_LAST_UPDATED_BY = #{saobLastUpdatedBy,jdbcType=VARCHAR},
+    SAOB_ENABLE_FLAG = #{saobEnableFlag,jdbcType=VARCHAR},
+    ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+    ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+    ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+    ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+    ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+    ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+    ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+    ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+    ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+    ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR}
+    where SAOB_ID = #{saobId,jdbcType=VARCHAR}
+  </update>
+</mapper>

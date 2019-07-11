@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.purchasetime.mapper.ScdaPurTimeBaseMapper" >
+  <resultMap id="BaseResultMap" type="com.pccw.framework.domain.purchasetime.ScdaPurTimeBase" >
+    <id column="KEY_ID" property="keyId" jdbcType="VARCHAR" />
+    <result column="PUR_FLOW_LINK" property="purFlowLink" jdbcType="VARCHAR" />
+    <result column="PRO_WARN_STATUS" property="proWarnStatus" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE_CATEGORY" property="attributeCategory" jdbcType="VARCHAR" />
+    <result column="PUR_DEMAND_PROJECT_NAME" property="purDemandProjectName" jdbcType="VARCHAR" />
+    <result column="PUR_DEMAND_NUMBER" property="purDemandNumber" jdbcType="VARCHAR" />
+    <result column="ES_PROJECT_NUMBER" property="esProjectNumber" jdbcType="VARCHAR" />
+    <result column="ES_PROJECT_NAME" property="esProjectName" jdbcType="VARCHAR" />
+    <result column="DEMAND_DEPT" property="demandDept" jdbcType="VARCHAR" />
+    <result column="SCH_BUDGET_TAX_NO" property="schBudgetTaxNo" jdbcType="VARCHAR" />
+    <result column="PUR_COMP" property="purComp" jdbcType="VARCHAR" />
+    <result column="PUR_DEPT" property="purDept" jdbcType="VARCHAR" />
+    <result column="SCH_DECISION_LEVEL" property="schDecisionLevel" jdbcType="VARCHAR" />
+    <result column="PUR_WAY" property="purWay" jdbcType="VARCHAR" />
+    <result column="PRO_TIME_NATURAL" property="proTimeNatural" jdbcType="VARCHAR" />
+    <result column="PRO_TIME_WORKING" property="proTimeWorking" jdbcType="VARCHAR" />
+    <result column="PRO_TOTAL_ELAPSED_TIME" property="proTotalElapsedTime" jdbcType="VARCHAR" />
+    <result column="PRO_BEF_AFTER_TIME" property="proBefAfterTime" jdbcType="VARCHAR" />
+    <result column="DEMAND_HANGUO_TOTAL_TIME" property="demandHanguoTotalTime" jdbcType="VARCHAR" />
+    <result column="PUR_DEMAND_CAREAT_DATE" property="purDemandCareatDate" jdbcType="DATE" />
+    <result column="PUR_DEMAND_ALLOT_DATE" property="purDemandAllotDate" jdbcType="DATE" />
+    <result column="DEMAND_HANGUO_NUM" property="demandHanguoNum" jdbcType="VARCHAR" />
+    <result column="DEMAND_FIRST_HANGUO_STARTDATE" property="demandFirstHanguoStartdate" jdbcType="DATE" />
+    <result column="DEMAND_END_HANGUO_ENDDATE" property="demandEndHanguoEnddate" jdbcType="DATE" />
+    <result column="SCH_SUBMIT_DATE" property="schSubmitDate" jdbcType="DATE" />
+    <result column="SCH_APPROVE_PASS_DATE" property="schApprovePassDate" jdbcType="DATE" />
+    <result column="SCH_ES_SET_DATE" property="schEsSetDate" jdbcType="DATE" />
+    <result column="ANNOUNCEMENT_DATE" property="announcementDate" jdbcType="DATE" />
+    <result column="BID_DOC_BUY_ENDDATE" property="bidDocBuyEnddate" jdbcType="DATE" />
+    <result column="BID_REPLY_ENDATE" property="bidReplyEndate" jdbcType="DATE" />
+    <result column="BID_REVIEW_ENDDATE" property="bidReviewEnddate" jdbcType="DATE" />
+    <result column="BID_CONFIRM_RES_DATE" property="bidConfirmResDate" jdbcType="DATE" />
+    <result column="PUR_RES_SUBMIT_DATE" property="purResSubmitDate" jdbcType="DATE" />
+    <result column="PUR_RES_APPROVE_DATE" property="purResApproveDate" jdbcType="DATE" />
+    <result column="ES_PROJECT_END_DATE" property="esProjectEndDate" jdbcType="DATE" />
+    <result column="IS_SIGN_FRAME_CONTRACT" property="isSignFrameContract" jdbcType="VARCHAR" />
+    <result column="CM_DRAFT_DATE" property="cmDraftDate" jdbcType="DATE" />
+    <result column="CM_CREATE_DATE" property="cmCreateDate" jdbcType="DATE" />
+    <result column="CM_APPROVE_DATE" property="cmApproveDate" jdbcType="DATE" />
+    <result column="CONTRACT_VALID_DATE" property="contractValidDate" jdbcType="DATE" />
+    <result column="CM_START_DATE" property="cmStartDate" jdbcType="DATE" />
+    <result column="CM_END_DATE" property="cmEndDate" jdbcType="DATE" />
+    <result column="PUR_DEMAND_STATUS" property="purDemandStatus" jdbcType="VARCHAR" />
+    <result column="TOTAL_FLOW_LINK_TIME" property="totalFlowLinkTime" jdbcType="VARCHAR" />
+    <result column="DEMAND_FLOW_LINK_TIME" property="demandFlowLinkTime" jdbcType="VARCHAR" />
+    <result column="SCH_FLOW_LINK_TIME" property="schFlowLinkTime" jdbcType="VARCHAR" />
+    <result column="ES_FLOW_LINK_TIME" property="esFlowLinkTime" jdbcType="VARCHAR" />
+    <result column="RESULT_FLOW_LINK_TIME" property="resultFlowLinkTime" jdbcType="VARCHAR" />
+    <result column="CONTRACT_FLOW_LINK_TIME" property="contractFlowLinkTime" jdbcType="VARCHAR" />
+    <result column="PTB_CREATION_DATE" property="ptbCreationDate" jdbcType="DATE" />
+    <result column="PTB_CREATED_BY" property="ptbCreatedBy" jdbcType="VARCHAR" />
+    <result column="PTB_LAST_UPDATE_DATE" property="ptbLastUpdateDate" jdbcType="DATE" />
+    <result column="PTB_LAST_UPDATED_BY" property="ptbLastUpdatedBy" jdbcType="VARCHAR" />
+    <result column="PTB_ENABLE_FLAG" property="ptbEnableFlag" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE1" property="attribute1" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE2" property="attribute2" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE3" property="attribute3" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE4" property="attribute4" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE5" property="attribute5" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE6" property="attribute6" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE7" property="attribute7" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE8" property="attribute8" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE9" property="attribute9" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE10" property="attribute10" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    KEY_ID, PUR_FLOW_LINK, PRO_WARN_STATUS, ATTRIBUTE_CATEGORY, PUR_DEMAND_PROJECT_NAME, 
+    PUR_DEMAND_NUMBER, ES_PROJECT_NUMBER, ES_PROJECT_NAME, DEMAND_DEPT, SCH_BUDGET_TAX_NO, 
+    PUR_COMP, PUR_DEPT, SCH_DECISION_LEVEL, PUR_WAY, PRO_TIME_NATURAL, PRO_TIME_WORKING, 
+    PRO_TOTAL_ELAPSED_TIME, PRO_BEF_AFTER_TIME, DEMAND_HANGUO_TOTAL_TIME, PUR_DEMAND_CAREAT_DATE, 
+    PUR_DEMAND_ALLOT_DATE, DEMAND_HANGUO_NUM, DEMAND_FIRST_HANGUO_STARTDATE, DEMAND_END_HANGUO_ENDDATE, 
+    SCH_SUBMIT_DATE, SCH_APPROVE_PASS_DATE, SCH_ES_SET_DATE, ANNOUNCEMENT_DATE, BID_DOC_BUY_ENDDATE, 
+    BID_REPLY_ENDATE, BID_REVIEW_ENDDATE, BID_CONFIRM_RES_DATE, PUR_RES_SUBMIT_DATE, 
+    PUR_RES_APPROVE_DATE, ES_PROJECT_END_DATE, IS_SIGN_FRAME_CONTRACT, CM_DRAFT_DATE, 
+    CM_CREATE_DATE, CM_APPROVE_DATE, CONTRACT_VALID_DATE, CM_START_DATE, CM_END_DATE, 
+    PUR_DEMAND_STATUS, TOTAL_FLOW_LINK_TIME, DEMAND_FLOW_LINK_TIME, SCH_FLOW_LINK_TIME, 
+    ES_FLOW_LINK_TIME, RESULT_FLOW_LINK_TIME, CONTRACT_FLOW_LINK_TIME, PTB_CREATION_DATE, 
+    PTB_CREATED_BY, PTB_LAST_UPDATE_DATE, PTB_LAST_UPDATED_BY, PTB_ENABLE_FLAG, ATTRIBUTE1, 
+    ATTRIBUTE2, ATTRIBUTE3, ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, ATTRIBUTE7, ATTRIBUTE8, 
+    ATTRIBUTE9, ATTRIBUTE10
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.pccw.framework.domain.purchasetime.ScdaPurTimeBaseExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from SCDA_PUR_TIME_BASE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from SCDA_PUR_TIME_BASE
+    where KEY_ID = #{keyId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from SCDA_PUR_TIME_BASE
+    where KEY_ID = #{keyId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.pccw.framework.domain.purchasetime.ScdaPurTimeBaseExample" >
+    delete from SCDA_PUR_TIME_BASE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.pccw.framework.domain.purchasetime.ScdaPurTimeBase" >
+    insert into SCDA_PUR_TIME_BASE (KEY_ID, PUR_FLOW_LINK, PRO_WARN_STATUS, 
+      ATTRIBUTE_CATEGORY, PUR_DEMAND_PROJECT_NAME, 
+      PUR_DEMAND_NUMBER, ES_PROJECT_NUMBER, ES_PROJECT_NAME, 
+      DEMAND_DEPT, SCH_BUDGET_TAX_NO, PUR_COMP, 
+      PUR_DEPT, SCH_DECISION_LEVEL, PUR_WAY, 
+      PRO_TIME_NATURAL, PRO_TIME_WORKING, PRO_TOTAL_ELAPSED_TIME, 
+      PRO_BEF_AFTER_TIME, DEMAND_HANGUO_TOTAL_TIME, 
+      PUR_DEMAND_CAREAT_DATE, PUR_DEMAND_ALLOT_DATE, DEMAND_HANGUO_NUM, 
+      DEMAND_FIRST_HANGUO_STARTDATE, DEMAND_END_HANGUO_ENDDATE, 
+      SCH_SUBMIT_DATE, SCH_APPROVE_PASS_DATE, SCH_ES_SET_DATE, 
+      ANNOUNCEMENT_DATE, BID_DOC_BUY_ENDDATE, BID_REPLY_ENDATE, 
+      BID_REVIEW_ENDDATE, BID_CONFIRM_RES_DATE, PUR_RES_SUBMIT_DATE, 
+      PUR_RES_APPROVE_DATE, ES_PROJECT_END_DATE, IS_SIGN_FRAME_CONTRACT, 
+      CM_DRAFT_DATE, CM_CREATE_DATE, CM_APPROVE_DATE, 
+      CONTRACT_VALID_DATE, CM_START_DATE, CM_END_DATE, 
+      PUR_DEMAND_STATUS, TOTAL_FLOW_LINK_TIME, DEMAND_FLOW_LINK_TIME, 
+      SCH_FLOW_LINK_TIME, ES_FLOW_LINK_TIME, RESULT_FLOW_LINK_TIME, 
+      CONTRACT_FLOW_LINK_TIME, PTB_CREATION_DATE, PTB_CREATED_BY, 
+      PTB_LAST_UPDATE_DATE, PTB_LAST_UPDATED_BY, PTB_ENABLE_FLAG, 
+      ATTRIBUTE1, ATTRIBUTE2, ATTRIBUTE3, 
+      ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, 
+      ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9, 
+      ATTRIBUTE10)
+    values (#{keyId,jdbcType=VARCHAR}, #{purFlowLink,jdbcType=VARCHAR}, #{proWarnStatus,jdbcType=VARCHAR}, 
+      #{attributeCategory,jdbcType=VARCHAR}, #{purDemandProjectName,jdbcType=VARCHAR}, 
+      #{purDemandNumber,jdbcType=VARCHAR}, #{esProjectNumber,jdbcType=VARCHAR}, #{esProjectName,jdbcType=VARCHAR}, 
+      #{demandDept,jdbcType=VARCHAR}, #{schBudgetTaxNo,jdbcType=VARCHAR}, #{purComp,jdbcType=VARCHAR}, 
+      #{purDept,jdbcType=VARCHAR}, #{schDecisionLevel,jdbcType=VARCHAR}, #{purWay,jdbcType=VARCHAR}, 
+      #{proTimeNatural,jdbcType=VARCHAR}, #{proTimeWorking,jdbcType=VARCHAR}, #{proTotalElapsedTime,jdbcType=VARCHAR}, 
+      #{proBefAfterTime,jdbcType=VARCHAR}, #{demandHanguoTotalTime,jdbcType=VARCHAR}, 
+      #{purDemandCareatDate,jdbcType=DATE}, #{purDemandAllotDate,jdbcType=DATE}, #{demandHanguoNum,jdbcType=VARCHAR}, 
+      #{demandFirstHanguoStartdate,jdbcType=DATE}, #{demandEndHanguoEnddate,jdbcType=DATE}, 
+      #{schSubmitDate,jdbcType=DATE}, #{schApprovePassDate,jdbcType=DATE}, #{schEsSetDate,jdbcType=DATE}, 
+      #{announcementDate,jdbcType=DATE}, #{bidDocBuyEnddate,jdbcType=DATE}, #{bidReplyEndate,jdbcType=DATE}, 
+      #{bidReviewEnddate,jdbcType=DATE}, #{bidConfirmResDate,jdbcType=DATE}, #{purResSubmitDate,jdbcType=DATE}, 
+      #{purResApproveDate,jdbcType=DATE}, #{esProjectEndDate,jdbcType=DATE}, #{isSignFrameContract,jdbcType=VARCHAR}, 
+      #{cmDraftDate,jdbcType=DATE}, #{cmCreateDate,jdbcType=DATE}, #{cmApproveDate,jdbcType=DATE}, 
+      #{contractValidDate,jdbcType=DATE}, #{cmStartDate,jdbcType=DATE}, #{cmEndDate,jdbcType=DATE}, 
+      #{purDemandStatus,jdbcType=VARCHAR}, #{totalFlowLinkTime,jdbcType=VARCHAR}, #{demandFlowLinkTime,jdbcType=VARCHAR}, 
+      #{schFlowLinkTime,jdbcType=VARCHAR}, #{esFlowLinkTime,jdbcType=VARCHAR}, #{resultFlowLinkTime,jdbcType=VARCHAR}, 
+      #{contractFlowLinkTime,jdbcType=VARCHAR}, #{ptbCreationDate,jdbcType=DATE}, #{ptbCreatedBy,jdbcType=VARCHAR}, 
+      #{ptbLastUpdateDate,jdbcType=DATE}, #{ptbLastUpdatedBy,jdbcType=VARCHAR}, #{ptbEnableFlag,jdbcType=VARCHAR}, 
+      #{attribute1,jdbcType=VARCHAR}, #{attribute2,jdbcType=VARCHAR}, #{attribute3,jdbcType=VARCHAR}, 
+      #{attribute4,jdbcType=VARCHAR}, #{attribute5,jdbcType=VARCHAR}, #{attribute6,jdbcType=VARCHAR}, 
+      #{attribute7,jdbcType=VARCHAR}, #{attribute8,jdbcType=VARCHAR}, #{attribute9,jdbcType=VARCHAR}, 
+      #{attribute10,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.pccw.framework.domain.purchasetime.ScdaPurTimeBase" >
+    insert into SCDA_PUR_TIME_BASE
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="keyId != null" >
+        KEY_ID,
+      </if>
+      <if test="purFlowLink != null" >
+        PUR_FLOW_LINK,
+      </if>
+      <if test="proWarnStatus != null" >
+        PRO_WARN_STATUS,
+      </if>
+      <if test="attributeCategory != null" >
+        ATTRIBUTE_CATEGORY,
+      </if>
+      <if test="purDemandProjectName != null" >
+        PUR_DEMAND_PROJECT_NAME,
+      </if>
+      <if test="purDemandNumber != null" >
+        PUR_DEMAND_NUMBER,
+      </if>
+      <if test="esProjectNumber != null" >
+        ES_PROJECT_NUMBER,
+      </if>
+      <if test="esProjectName != null" >
+        ES_PROJECT_NAME,
+      </if>
+      <if test="demandDept != null" >
+        DEMAND_DEPT,
+      </if>
+      <if test="schBudgetTaxNo != null" >
+        SCH_BUDGET_TAX_NO,
+      </if>
+      <if test="purComp != null" >
+        PUR_COMP,
+      </if>
+      <if test="purDept != null" >
+        PUR_DEPT,
+      </if>
+      <if test="schDecisionLevel != null" >
+        SCH_DECISION_LEVEL,
+      </if>
+      <if test="purWay != null" >
+        PUR_WAY,
+      </if>
+      <if test="proTimeNatural != null" >
+        PRO_TIME_NATURAL,
+      </if>
+      <if test="proTimeWorking != null" >
+        PRO_TIME_WORKING,
+      </if>
+      <if test="proTotalElapsedTime != null" >
+        PRO_TOTAL_ELAPSED_TIME,
+      </if>
+      <if test="proBefAfterTime != null" >
+        PRO_BEF_AFTER_TIME,
+      </if>
+      <if test="demandHanguoTotalTime != null" >
+        DEMAND_HANGUO_TOTAL_TIME,
+      </if>
+      <if test="purDemandCareatDate != null" >
+        PUR_DEMAND_CAREAT_DATE,
+      </if>
+      <if test="purDemandAllotDate != null" >
+        PUR_DEMAND_ALLOT_DATE,
+      </if>
+      <if test="demandHanguoNum != null" >
+        DEMAND_HANGUO_NUM,
+      </if>
+      <if test="demandFirstHanguoStartdate != null" >
+        DEMAND_FIRST_HANGUO_STARTDATE,
+      </if>
+      <if test="demandEndHanguoEnddate != null" >
+        DEMAND_END_HANGUO_ENDDATE,
+      </if>
+      <if test="schSubmitDate != null" >
+        SCH_SUBMIT_DATE,
+      </if>
+      <if test="schApprovePassDate != null" >
+        SCH_APPROVE_PASS_DATE,
+      </if>
+      <if test="schEsSetDate != null" >
+        SCH_ES_SET_DATE,
+      </if>
+      <if test="announcementDate != null" >
+        ANNOUNCEMENT_DATE,
+      </if>
+      <if test="bidDocBuyEnddate != null" >
+        BID_DOC_BUY_ENDDATE,
+      </if>
+      <if test="bidReplyEndate != null" >
+        BID_REPLY_ENDATE,
+      </if>
+      <if test="bidReviewEnddate != null" >
+        BID_REVIEW_ENDDATE,
+      </if>
+      <if test="bidConfirmResDate != null" >
+        BID_CONFIRM_RES_DATE,
+      </if>
+      <if test="purResSubmitDate != null" >
+        PUR_RES_SUBMIT_DATE,
+      </if>
+      <if test="purResApproveDate != null" >
+        PUR_RES_APPROVE_DATE,
+      </if>
+      <if test="esProjectEndDate != null" >
+        ES_PROJECT_END_DATE,
+      </if>
+      <if test="isSignFrameContract != null" >
+        IS_SIGN_FRAME_CONTRACT,
+      </if>
+      <if test="cmDraftDate != null" >
+        CM_DRAFT_DATE,
+      </if>
+      <if test="cmCreateDate != null" >
+        CM_CREATE_DATE,
+      </if>
+      <if test="cmApproveDate != null" >
+        CM_APPROVE_DATE,
+      </if>
+      <if test="contractValidDate != null" >
+        CONTRACT_VALID_DATE,
+      </if>
+      <if test="cmStartDate != null" >
+        CM_START_DATE,
+      </if>
+      <if test="cmEndDate != null" >
+        CM_END_DATE,
+      </if>
+      <if test="purDemandStatus != null" >
+        PUR_DEMAND_STATUS,
+      </if>
+      <if test="totalFlowLinkTime != null" >
+        TOTAL_FLOW_LINK_TIME,
+      </if>
+      <if test="demandFlowLinkTime != null" >
+        DEMAND_FLOW_LINK_TIME,
+      </if>
+      <if test="schFlowLinkTime != null" >
+        SCH_FLOW_LINK_TIME,
+      </if>
+      <if test="esFlowLinkTime != null" >
+        ES_FLOW_LINK_TIME,
+      </if>
+      <if test="resultFlowLinkTime != null" >
+        RESULT_FLOW_LINK_TIME,
+      </if>
+      <if test="contractFlowLinkTime != null" >
+        CONTRACT_FLOW_LINK_TIME,
+      </if>
+      <if test="ptbCreationDate != null" >
+        PTB_CREATION_DATE,
+      </if>
+      <if test="ptbCreatedBy != null" >
+        PTB_CREATED_BY,
+      </if>
+      <if test="ptbLastUpdateDate != null" >
+        PTB_LAST_UPDATE_DATE,
+      </if>
+      <if test="ptbLastUpdatedBy != null" >
+        PTB_LAST_UPDATED_BY,
+      </if>
+      <if test="ptbEnableFlag != null" >
+        PTB_ENABLE_FLAG,
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1,
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2,
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3,
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4,
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5,
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6,
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7,
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8,
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9,
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="keyId != null" >
+        #{keyId,jdbcType=VARCHAR},
+      </if>
+      <if test="purFlowLink != null" >
+        #{purFlowLink,jdbcType=VARCHAR},
+      </if>
+      <if test="proWarnStatus != null" >
+        #{proWarnStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="attributeCategory != null" >
+        #{attributeCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="purDemandProjectName != null" >
+        #{purDemandProjectName,jdbcType=VARCHAR},
+      </if>
+      <if test="purDemandNumber != null" >
+        #{purDemandNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="esProjectNumber != null" >
+        #{esProjectNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="esProjectName != null" >
+        #{esProjectName,jdbcType=VARCHAR},
+      </if>
+      <if test="demandDept != null" >
+        #{demandDept,jdbcType=VARCHAR},
+      </if>
+      <if test="schBudgetTaxNo != null" >
+        #{schBudgetTaxNo,jdbcType=VARCHAR},
+      </if>
+      <if test="purComp != null" >
+        #{purComp,jdbcType=VARCHAR},
+      </if>
+      <if test="purDept != null" >
+        #{purDept,jdbcType=VARCHAR},
+      </if>
+      <if test="schDecisionLevel != null" >
+        #{schDecisionLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="purWay != null" >
+        #{purWay,jdbcType=VARCHAR},
+      </if>
+      <if test="proTimeNatural != null" >
+        #{proTimeNatural,jdbcType=VARCHAR},
+      </if>
+      <if test="proTimeWorking != null" >
+        #{proTimeWorking,jdbcType=VARCHAR},
+      </if>
+      <if test="proTotalElapsedTime != null" >
+        #{proTotalElapsedTime,jdbcType=VARCHAR},
+      </if>
+      <if test="proBefAfterTime != null" >
+        #{proBefAfterTime,jdbcType=VARCHAR},
+      </if>
+      <if test="demandHanguoTotalTime != null" >
+        #{demandHanguoTotalTime,jdbcType=VARCHAR},
+      </if>
+      <if test="purDemandCareatDate != null" >
+        #{purDemandCareatDate,jdbcType=DATE},
+      </if>
+      <if test="purDemandAllotDate != null" >
+        #{purDemandAllotDate,jdbcType=DATE},
+      </if>
+      <if test="demandHanguoNum != null" >
+        #{demandHanguoNum,jdbcType=VARCHAR},
+      </if>
+      <if test="demandFirstHanguoStartdate != null" >
+        #{demandFirstHanguoStartdate,jdbcType=DATE},
+      </if>
+      <if test="demandEndHanguoEnddate != null" >
+        #{demandEndHanguoEnddate,jdbcType=DATE},
+      </if>
+      <if test="schSubmitDate != null" >
+        #{schSubmitDate,jdbcType=DATE},
+      </if>
+      <if test="schApprovePassDate != null" >
+        #{schApprovePassDate,jdbcType=DATE},
+      </if>
+      <if test="schEsSetDate != null" >
+        #{schEsSetDate,jdbcType=DATE},
+      </if>
+      <if test="announcementDate != null" >
+        #{announcementDate,jdbcType=DATE},
+      </if>
+      <if test="bidDocBuyEnddate != null" >
+        #{bidDocBuyEnddate,jdbcType=DATE},
+      </if>
+      <if test="bidReplyEndate != null" >
+        #{bidReplyEndate,jdbcType=DATE},
+      </if>
+      <if test="bidReviewEnddate != null" >
+        #{bidReviewEnddate,jdbcType=DATE},
+      </if>
+      <if test="bidConfirmResDate != null" >
+        #{bidConfirmResDate,jdbcType=DATE},
+      </if>
+      <if test="purResSubmitDate != null" >
+        #{purResSubmitDate,jdbcType=DATE},
+      </if>
+      <if test="purResApproveDate != null" >
+        #{purResApproveDate,jdbcType=DATE},
+      </if>
+      <if test="esProjectEndDate != null" >
+        #{esProjectEndDate,jdbcType=DATE},
+      </if>
+      <if test="isSignFrameContract != null" >
+        #{isSignFrameContract,jdbcType=VARCHAR},
+      </if>
+      <if test="cmDraftDate != null" >
+        #{cmDraftDate,jdbcType=DATE},
+      </if>
+      <if test="cmCreateDate != null" >
+        #{cmCreateDate,jdbcType=DATE},
+      </if>
+      <if test="cmApproveDate != null" >
+        #{cmApproveDate,jdbcType=DATE},
+      </if>
+      <if test="contractValidDate != null" >
+        #{contractValidDate,jdbcType=DATE},
+      </if>
+      <if test="cmStartDate != null" >
+        #{cmStartDate,jdbcType=DATE},
+      </if>
+      <if test="cmEndDate != null" >
+        #{cmEndDate,jdbcType=DATE},
+      </if>
+      <if test="purDemandStatus != null" >
+        #{purDemandStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="totalFlowLinkTime != null" >
+        #{totalFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="demandFlowLinkTime != null" >
+        #{demandFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="schFlowLinkTime != null" >
+        #{schFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="esFlowLinkTime != null" >
+        #{esFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="resultFlowLinkTime != null" >
+        #{resultFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="contractFlowLinkTime != null" >
+        #{contractFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="ptbCreationDate != null" >
+        #{ptbCreationDate,jdbcType=DATE},
+      </if>
+      <if test="ptbCreatedBy != null" >
+        #{ptbCreatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="ptbLastUpdateDate != null" >
+        #{ptbLastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="ptbLastUpdatedBy != null" >
+        #{ptbLastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="ptbEnableFlag != null" >
+        #{ptbEnableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.pccw.framework.domain.purchasetime.ScdaPurTimeBaseExample" resultType="java.lang.Integer" >
+    select count(*) from SCDA_PUR_TIME_BASE
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update SCDA_PUR_TIME_BASE
+    <set >
+      <if test="record.keyId != null" >
+        KEY_ID = #{record.keyId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purFlowLink != null" >
+        PUR_FLOW_LINK = #{record.purFlowLink,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proWarnStatus != null" >
+        PRO_WARN_STATUS = #{record.proWarnStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attributeCategory != null" >
+        ATTRIBUTE_CATEGORY = #{record.attributeCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purDemandProjectName != null" >
+        PUR_DEMAND_PROJECT_NAME = #{record.purDemandProjectName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purDemandNumber != null" >
+        PUR_DEMAND_NUMBER = #{record.purDemandNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.esProjectNumber != null" >
+        ES_PROJECT_NUMBER = #{record.esProjectNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.esProjectName != null" >
+        ES_PROJECT_NAME = #{record.esProjectName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.demandDept != null" >
+        DEMAND_DEPT = #{record.demandDept,jdbcType=VARCHAR},
+      </if>
+      <if test="record.schBudgetTaxNo != null" >
+        SCH_BUDGET_TAX_NO = #{record.schBudgetTaxNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purComp != null" >
+        PUR_COMP = #{record.purComp,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purDept != null" >
+        PUR_DEPT = #{record.purDept,jdbcType=VARCHAR},
+      </if>
+      <if test="record.schDecisionLevel != null" >
+        SCH_DECISION_LEVEL = #{record.schDecisionLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purWay != null" >
+        PUR_WAY = #{record.purWay,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proTimeNatural != null" >
+        PRO_TIME_NATURAL = #{record.proTimeNatural,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proTimeWorking != null" >
+        PRO_TIME_WORKING = #{record.proTimeWorking,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proTotalElapsedTime != null" >
+        PRO_TOTAL_ELAPSED_TIME = #{record.proTotalElapsedTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proBefAfterTime != null" >
+        PRO_BEF_AFTER_TIME = #{record.proBefAfterTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.demandHanguoTotalTime != null" >
+        DEMAND_HANGUO_TOTAL_TIME = #{record.demandHanguoTotalTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purDemandCareatDate != null" >
+        PUR_DEMAND_CAREAT_DATE = #{record.purDemandCareatDate,jdbcType=DATE},
+      </if>
+      <if test="record.purDemandAllotDate != null" >
+        PUR_DEMAND_ALLOT_DATE = #{record.purDemandAllotDate,jdbcType=DATE},
+      </if>
+      <if test="record.demandHanguoNum != null" >
+        DEMAND_HANGUO_NUM = #{record.demandHanguoNum,jdbcType=VARCHAR},
+      </if>
+      <if test="record.demandFirstHanguoStartdate != null" >
+        DEMAND_FIRST_HANGUO_STARTDATE = #{record.demandFirstHanguoStartdate,jdbcType=DATE},
+      </if>
+      <if test="record.demandEndHanguoEnddate != null" >
+        DEMAND_END_HANGUO_ENDDATE = #{record.demandEndHanguoEnddate,jdbcType=DATE},
+      </if>
+      <if test="record.schSubmitDate != null" >
+        SCH_SUBMIT_DATE = #{record.schSubmitDate,jdbcType=DATE},
+      </if>
+      <if test="record.schApprovePassDate != null" >
+        SCH_APPROVE_PASS_DATE = #{record.schApprovePassDate,jdbcType=DATE},
+      </if>
+      <if test="record.schEsSetDate != null" >
+        SCH_ES_SET_DATE = #{record.schEsSetDate,jdbcType=DATE},
+      </if>
+      <if test="record.announcementDate != null" >
+        ANNOUNCEMENT_DATE = #{record.announcementDate,jdbcType=DATE},
+      </if>
+      <if test="record.bidDocBuyEnddate != null" >
+        BID_DOC_BUY_ENDDATE = #{record.bidDocBuyEnddate,jdbcType=DATE},
+      </if>
+      <if test="record.bidReplyEndate != null" >
+        BID_REPLY_ENDATE = #{record.bidReplyEndate,jdbcType=DATE},
+      </if>
+      <if test="record.bidReviewEnddate != null" >
+        BID_REVIEW_ENDDATE = #{record.bidReviewEnddate,jdbcType=DATE},
+      </if>
+      <if test="record.bidConfirmResDate != null" >
+        BID_CONFIRM_RES_DATE = #{record.bidConfirmResDate,jdbcType=DATE},
+      </if>
+      <if test="record.purResSubmitDate != null" >
+        PUR_RES_SUBMIT_DATE = #{record.purResSubmitDate,jdbcType=DATE},
+      </if>
+      <if test="record.purResApproveDate != null" >
+        PUR_RES_APPROVE_DATE = #{record.purResApproveDate,jdbcType=DATE},
+      </if>
+      <if test="record.esProjectEndDate != null" >
+        ES_PROJECT_END_DATE = #{record.esProjectEndDate,jdbcType=DATE},
+      </if>
+      <if test="record.isSignFrameContract != null" >
+        IS_SIGN_FRAME_CONTRACT = #{record.isSignFrameContract,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cmDraftDate != null" >
+        CM_DRAFT_DATE = #{record.cmDraftDate,jdbcType=DATE},
+      </if>
+      <if test="record.cmCreateDate != null" >
+        CM_CREATE_DATE = #{record.cmCreateDate,jdbcType=DATE},
+      </if>
+      <if test="record.cmApproveDate != null" >
+        CM_APPROVE_DATE = #{record.cmApproveDate,jdbcType=DATE},
+      </if>
+      <if test="record.contractValidDate != null" >
+        CONTRACT_VALID_DATE = #{record.contractValidDate,jdbcType=DATE},
+      </if>
+      <if test="record.cmStartDate != null" >
+        CM_START_DATE = #{record.cmStartDate,jdbcType=DATE},
+      </if>
+      <if test="record.cmEndDate != null" >
+        CM_END_DATE = #{record.cmEndDate,jdbcType=DATE},
+      </if>
+      <if test="record.purDemandStatus != null" >
+        PUR_DEMAND_STATUS = #{record.purDemandStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="record.totalFlowLinkTime != null" >
+        TOTAL_FLOW_LINK_TIME = #{record.totalFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.demandFlowLinkTime != null" >
+        DEMAND_FLOW_LINK_TIME = #{record.demandFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.schFlowLinkTime != null" >
+        SCH_FLOW_LINK_TIME = #{record.schFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.esFlowLinkTime != null" >
+        ES_FLOW_LINK_TIME = #{record.esFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.resultFlowLinkTime != null" >
+        RESULT_FLOW_LINK_TIME = #{record.resultFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.contractFlowLinkTime != null" >
+        CONTRACT_FLOW_LINK_TIME = #{record.contractFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ptbCreationDate != null" >
+        PTB_CREATION_DATE = #{record.ptbCreationDate,jdbcType=DATE},
+      </if>
+      <if test="record.ptbCreatedBy != null" >
+        PTB_CREATED_BY = #{record.ptbCreatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ptbLastUpdateDate != null" >
+        PTB_LAST_UPDATE_DATE = #{record.ptbLastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="record.ptbLastUpdatedBy != null" >
+        PTB_LAST_UPDATED_BY = #{record.ptbLastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ptbEnableFlag != null" >
+        PTB_ENABLE_FLAG = #{record.ptbEnableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute1 != null" >
+        ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute2 != null" >
+        ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute3 != null" >
+        ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute4 != null" >
+        ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute5 != null" >
+        ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute6 != null" >
+        ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute7 != null" >
+        ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute8 != null" >
+        ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute9 != null" >
+        ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute10 != null" >
+        ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update SCDA_PUR_TIME_BASE
+    set KEY_ID = #{record.keyId,jdbcType=VARCHAR},
+      PUR_FLOW_LINK = #{record.purFlowLink,jdbcType=VARCHAR},
+      PRO_WARN_STATUS = #{record.proWarnStatus,jdbcType=VARCHAR},
+      ATTRIBUTE_CATEGORY = #{record.attributeCategory,jdbcType=VARCHAR},
+      PUR_DEMAND_PROJECT_NAME = #{record.purDemandProjectName,jdbcType=VARCHAR},
+      PUR_DEMAND_NUMBER = #{record.purDemandNumber,jdbcType=VARCHAR},
+      ES_PROJECT_NUMBER = #{record.esProjectNumber,jdbcType=VARCHAR},
+      ES_PROJECT_NAME = #{record.esProjectName,jdbcType=VARCHAR},
+      DEMAND_DEPT = #{record.demandDept,jdbcType=VARCHAR},
+      SCH_BUDGET_TAX_NO = #{record.schBudgetTaxNo,jdbcType=VARCHAR},
+      PUR_COMP = #{record.purComp,jdbcType=VARCHAR},
+      PUR_DEPT = #{record.purDept,jdbcType=VARCHAR},
+      SCH_DECISION_LEVEL = #{record.schDecisionLevel,jdbcType=VARCHAR},
+      PUR_WAY = #{record.purWay,jdbcType=VARCHAR},
+      PRO_TIME_NATURAL = #{record.proTimeNatural,jdbcType=VARCHAR},
+      PRO_TIME_WORKING = #{record.proTimeWorking,jdbcType=VARCHAR},
+      PRO_TOTAL_ELAPSED_TIME = #{record.proTotalElapsedTime,jdbcType=VARCHAR},
+      PRO_BEF_AFTER_TIME = #{record.proBefAfterTime,jdbcType=VARCHAR},
+      DEMAND_HANGUO_TOTAL_TIME = #{record.demandHanguoTotalTime,jdbcType=VARCHAR},
+      PUR_DEMAND_CAREAT_DATE = #{record.purDemandCareatDate,jdbcType=DATE},
+      PUR_DEMAND_ALLOT_DATE = #{record.purDemandAllotDate,jdbcType=DATE},
+      DEMAND_HANGUO_NUM = #{record.demandHanguoNum,jdbcType=VARCHAR},
+      DEMAND_FIRST_HANGUO_STARTDATE = #{record.demandFirstHanguoStartdate,jdbcType=DATE},
+      DEMAND_END_HANGUO_ENDDATE = #{record.demandEndHanguoEnddate,jdbcType=DATE},
+      SCH_SUBMIT_DATE = #{record.schSubmitDate,jdbcType=DATE},
+      SCH_APPROVE_PASS_DATE = #{record.schApprovePassDate,jdbcType=DATE},
+      SCH_ES_SET_DATE = #{record.schEsSetDate,jdbcType=DATE},
+      ANNOUNCEMENT_DATE = #{record.announcementDate,jdbcType=DATE},
+      BID_DOC_BUY_ENDDATE = #{record.bidDocBuyEnddate,jdbcType=DATE},
+      BID_REPLY_ENDATE = #{record.bidReplyEndate,jdbcType=DATE},
+      BID_REVIEW_ENDDATE = #{record.bidReviewEnddate,jdbcType=DATE},
+      BID_CONFIRM_RES_DATE = #{record.bidConfirmResDate,jdbcType=DATE},
+      PUR_RES_SUBMIT_DATE = #{record.purResSubmitDate,jdbcType=DATE},
+      PUR_RES_APPROVE_DATE = #{record.purResApproveDate,jdbcType=DATE},
+      ES_PROJECT_END_DATE = #{record.esProjectEndDate,jdbcType=DATE},
+      IS_SIGN_FRAME_CONTRACT = #{record.isSignFrameContract,jdbcType=VARCHAR},
+      CM_DRAFT_DATE = #{record.cmDraftDate,jdbcType=DATE},
+      CM_CREATE_DATE = #{record.cmCreateDate,jdbcType=DATE},
+      CM_APPROVE_DATE = #{record.cmApproveDate,jdbcType=DATE},
+      CONTRACT_VALID_DATE = #{record.contractValidDate,jdbcType=DATE},
+      CM_START_DATE = #{record.cmStartDate,jdbcType=DATE},
+      CM_END_DATE = #{record.cmEndDate,jdbcType=DATE},
+      PUR_DEMAND_STATUS = #{record.purDemandStatus,jdbcType=VARCHAR},
+      TOTAL_FLOW_LINK_TIME = #{record.totalFlowLinkTime,jdbcType=VARCHAR},
+      DEMAND_FLOW_LINK_TIME = #{record.demandFlowLinkTime,jdbcType=VARCHAR},
+      SCH_FLOW_LINK_TIME = #{record.schFlowLinkTime,jdbcType=VARCHAR},
+      ES_FLOW_LINK_TIME = #{record.esFlowLinkTime,jdbcType=VARCHAR},
+      RESULT_FLOW_LINK_TIME = #{record.resultFlowLinkTime,jdbcType=VARCHAR},
+      CONTRACT_FLOW_LINK_TIME = #{record.contractFlowLinkTime,jdbcType=VARCHAR},
+      PTB_CREATION_DATE = #{record.ptbCreationDate,jdbcType=DATE},
+      PTB_CREATED_BY = #{record.ptbCreatedBy,jdbcType=VARCHAR},
+      PTB_LAST_UPDATE_DATE = #{record.ptbLastUpdateDate,jdbcType=DATE},
+      PTB_LAST_UPDATED_BY = #{record.ptbLastUpdatedBy,jdbcType=VARCHAR},
+      PTB_ENABLE_FLAG = #{record.ptbEnableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pccw.framework.domain.purchasetime.ScdaPurTimeBase" >
+    update SCDA_PUR_TIME_BASE
+    <set >
+      <if test="purFlowLink != null" >
+        PUR_FLOW_LINK = #{purFlowLink,jdbcType=VARCHAR},
+      </if>
+      <if test="proWarnStatus != null" >
+        PRO_WARN_STATUS = #{proWarnStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="attributeCategory != null" >
+        ATTRIBUTE_CATEGORY = #{attributeCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="purDemandProjectName != null" >
+        PUR_DEMAND_PROJECT_NAME = #{purDemandProjectName,jdbcType=VARCHAR},
+      </if>
+      <if test="purDemandNumber != null" >
+        PUR_DEMAND_NUMBER = #{purDemandNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="esProjectNumber != null" >
+        ES_PROJECT_NUMBER = #{esProjectNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="esProjectName != null" >
+        ES_PROJECT_NAME = #{esProjectName,jdbcType=VARCHAR},
+      </if>
+      <if test="demandDept != null" >
+        DEMAND_DEPT = #{demandDept,jdbcType=VARCHAR},
+      </if>
+      <if test="schBudgetTaxNo != null" >
+        SCH_BUDGET_TAX_NO = #{schBudgetTaxNo,jdbcType=VARCHAR},
+      </if>
+      <if test="purComp != null" >
+        PUR_COMP = #{purComp,jdbcType=VARCHAR},
+      </if>
+      <if test="purDept != null" >
+        PUR_DEPT = #{purDept,jdbcType=VARCHAR},
+      </if>
+      <if test="schDecisionLevel != null" >
+        SCH_DECISION_LEVEL = #{schDecisionLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="purWay != null" >
+        PUR_WAY = #{purWay,jdbcType=VARCHAR},
+      </if>
+      <if test="proTimeNatural != null" >
+        PRO_TIME_NATURAL = #{proTimeNatural,jdbcType=VARCHAR},
+      </if>
+      <if test="proTimeWorking != null" >
+        PRO_TIME_WORKING = #{proTimeWorking,jdbcType=VARCHAR},
+      </if>
+      <if test="proTotalElapsedTime != null" >
+        PRO_TOTAL_ELAPSED_TIME = #{proTotalElapsedTime,jdbcType=VARCHAR},
+      </if>
+      <if test="proBefAfterTime != null" >
+        PRO_BEF_AFTER_TIME = #{proBefAfterTime,jdbcType=VARCHAR},
+      </if>
+      <if test="demandHanguoTotalTime != null" >
+        DEMAND_HANGUO_TOTAL_TIME = #{demandHanguoTotalTime,jdbcType=VARCHAR},
+      </if>
+      <if test="purDemandCareatDate != null" >
+        PUR_DEMAND_CAREAT_DATE = #{purDemandCareatDate,jdbcType=DATE},
+      </if>
+      <if test="purDemandAllotDate != null" >
+        PUR_DEMAND_ALLOT_DATE = #{purDemandAllotDate,jdbcType=DATE},
+      </if>
+      <if test="demandHanguoNum != null" >
+        DEMAND_HANGUO_NUM = #{demandHanguoNum,jdbcType=VARCHAR},
+      </if>
+      <if test="demandFirstHanguoStartdate != null" >
+        DEMAND_FIRST_HANGUO_STARTDATE = #{demandFirstHanguoStartdate,jdbcType=DATE},
+      </if>
+      <if test="demandEndHanguoEnddate != null" >
+        DEMAND_END_HANGUO_ENDDATE = #{demandEndHanguoEnddate,jdbcType=DATE},
+      </if>
+      <if test="schSubmitDate != null" >
+        SCH_SUBMIT_DATE = #{schSubmitDate,jdbcType=DATE},
+      </if>
+      <if test="schApprovePassDate != null" >
+        SCH_APPROVE_PASS_DATE = #{schApprovePassDate,jdbcType=DATE},
+      </if>
+      <if test="schEsSetDate != null" >
+        SCH_ES_SET_DATE = #{schEsSetDate,jdbcType=DATE},
+      </if>
+      <if test="announcementDate != null" >
+        ANNOUNCEMENT_DATE = #{announcementDate,jdbcType=DATE},
+      </if>
+      <if test="bidDocBuyEnddate != null" >
+        BID_DOC_BUY_ENDDATE = #{bidDocBuyEnddate,jdbcType=DATE},
+      </if>
+      <if test="bidReplyEndate != null" >
+        BID_REPLY_ENDATE = #{bidReplyEndate,jdbcType=DATE},
+      </if>
+      <if test="bidReviewEnddate != null" >
+        BID_REVIEW_ENDDATE = #{bidReviewEnddate,jdbcType=DATE},
+      </if>
+      <if test="bidConfirmResDate != null" >
+        BID_CONFIRM_RES_DATE = #{bidConfirmResDate,jdbcType=DATE},
+      </if>
+      <if test="purResSubmitDate != null" >
+        PUR_RES_SUBMIT_DATE = #{purResSubmitDate,jdbcType=DATE},
+      </if>
+      <if test="purResApproveDate != null" >
+        PUR_RES_APPROVE_DATE = #{purResApproveDate,jdbcType=DATE},
+      </if>
+      <if test="esProjectEndDate != null" >
+        ES_PROJECT_END_DATE = #{esProjectEndDate,jdbcType=DATE},
+      </if>
+      <if test="isSignFrameContract != null" >
+        IS_SIGN_FRAME_CONTRACT = #{isSignFrameContract,jdbcType=VARCHAR},
+      </if>
+      <if test="cmDraftDate != null" >
+        CM_DRAFT_DATE = #{cmDraftDate,jdbcType=DATE},
+      </if>
+      <if test="cmCreateDate != null" >
+        CM_CREATE_DATE = #{cmCreateDate,jdbcType=DATE},
+      </if>
+      <if test="cmApproveDate != null" >
+        CM_APPROVE_DATE = #{cmApproveDate,jdbcType=DATE},
+      </if>
+      <if test="contractValidDate != null" >
+        CONTRACT_VALID_DATE = #{contractValidDate,jdbcType=DATE},
+      </if>
+      <if test="cmStartDate != null" >
+        CM_START_DATE = #{cmStartDate,jdbcType=DATE},
+      </if>
+      <if test="cmEndDate != null" >
+        CM_END_DATE = #{cmEndDate,jdbcType=DATE},
+      </if>
+      <if test="purDemandStatus != null" >
+        PUR_DEMAND_STATUS = #{purDemandStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="totalFlowLinkTime != null" >
+        TOTAL_FLOW_LINK_TIME = #{totalFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="demandFlowLinkTime != null" >
+        DEMAND_FLOW_LINK_TIME = #{demandFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="schFlowLinkTime != null" >
+        SCH_FLOW_LINK_TIME = #{schFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="esFlowLinkTime != null" >
+        ES_FLOW_LINK_TIME = #{esFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="resultFlowLinkTime != null" >
+        RESULT_FLOW_LINK_TIME = #{resultFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="contractFlowLinkTime != null" >
+        CONTRACT_FLOW_LINK_TIME = #{contractFlowLinkTime,jdbcType=VARCHAR},
+      </if>
+      <if test="ptbCreationDate != null" >
+        PTB_CREATION_DATE = #{ptbCreationDate,jdbcType=DATE},
+      </if>
+      <if test="ptbCreatedBy != null" >
+        PTB_CREATED_BY = #{ptbCreatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="ptbLastUpdateDate != null" >
+        PTB_LAST_UPDATE_DATE = #{ptbLastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="ptbLastUpdatedBy != null" >
+        PTB_LAST_UPDATED_BY = #{ptbLastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="ptbEnableFlag != null" >
+        PTB_ENABLE_FLAG = #{ptbEnableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where KEY_ID = #{keyId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pccw.framework.domain.purchasetime.ScdaPurTimeBase" >
+    update SCDA_PUR_TIME_BASE
+    set PUR_FLOW_LINK = #{purFlowLink,jdbcType=VARCHAR},
+      PRO_WARN_STATUS = #{proWarnStatus,jdbcType=VARCHAR},
+      ATTRIBUTE_CATEGORY = #{attributeCategory,jdbcType=VARCHAR},
+      PUR_DEMAND_PROJECT_NAME = #{purDemandProjectName,jdbcType=VARCHAR},
+      PUR_DEMAND_NUMBER = #{purDemandNumber,jdbcType=VARCHAR},
+      ES_PROJECT_NUMBER = #{esProjectNumber,jdbcType=VARCHAR},
+      ES_PROJECT_NAME = #{esProjectName,jdbcType=VARCHAR},
+      DEMAND_DEPT = #{demandDept,jdbcType=VARCHAR},
+      SCH_BUDGET_TAX_NO = #{schBudgetTaxNo,jdbcType=VARCHAR},
+      PUR_COMP = #{purComp,jdbcType=VARCHAR},
+      PUR_DEPT = #{purDept,jdbcType=VARCHAR},
+      SCH_DECISION_LEVEL = #{schDecisionLevel,jdbcType=VARCHAR},
+      PUR_WAY = #{purWay,jdbcType=VARCHAR},
+      PRO_TIME_NATURAL = #{proTimeNatural,jdbcType=VARCHAR},
+      PRO_TIME_WORKING = #{proTimeWorking,jdbcType=VARCHAR},
+      PRO_TOTAL_ELAPSED_TIME = #{proTotalElapsedTime,jdbcType=VARCHAR},
+      PRO_BEF_AFTER_TIME = #{proBefAfterTime,jdbcType=VARCHAR},
+      DEMAND_HANGUO_TOTAL_TIME = #{demandHanguoTotalTime,jdbcType=VARCHAR},
+      PUR_DEMAND_CAREAT_DATE = #{purDemandCareatDate,jdbcType=DATE},
+      PUR_DEMAND_ALLOT_DATE = #{purDemandAllotDate,jdbcType=DATE},
+      DEMAND_HANGUO_NUM = #{demandHanguoNum,jdbcType=VARCHAR},
+      DEMAND_FIRST_HANGUO_STARTDATE = #{demandFirstHanguoStartdate,jdbcType=DATE},
+      DEMAND_END_HANGUO_ENDDATE = #{demandEndHanguoEnddate,jdbcType=DATE},
+      SCH_SUBMIT_DATE = #{schSubmitDate,jdbcType=DATE},
+      SCH_APPROVE_PASS_DATE = #{schApprovePassDate,jdbcType=DATE},
+      SCH_ES_SET_DATE = #{schEsSetDate,jdbcType=DATE},
+      ANNOUNCEMENT_DATE = #{announcementDate,jdbcType=DATE},
+      BID_DOC_BUY_ENDDATE = #{bidDocBuyEnddate,jdbcType=DATE},
+      BID_REPLY_ENDATE = #{bidReplyEndate,jdbcType=DATE},
+      BID_REVIEW_ENDDATE = #{bidReviewEnddate,jdbcType=DATE},
+      BID_CONFIRM_RES_DATE = #{bidConfirmResDate,jdbcType=DATE},
+      PUR_RES_SUBMIT_DATE = #{purResSubmitDate,jdbcType=DATE},
+      PUR_RES_APPROVE_DATE = #{purResApproveDate,jdbcType=DATE},
+      ES_PROJECT_END_DATE = #{esProjectEndDate,jdbcType=DATE},
+      IS_SIGN_FRAME_CONTRACT = #{isSignFrameContract,jdbcType=VARCHAR},
+      CM_DRAFT_DATE = #{cmDraftDate,jdbcType=DATE},
+      CM_CREATE_DATE = #{cmCreateDate,jdbcType=DATE},
+      CM_APPROVE_DATE = #{cmApproveDate,jdbcType=DATE},
+      CONTRACT_VALID_DATE = #{contractValidDate,jdbcType=DATE},
+      CM_START_DATE = #{cmStartDate,jdbcType=DATE},
+      CM_END_DATE = #{cmEndDate,jdbcType=DATE},
+      PUR_DEMAND_STATUS = #{purDemandStatus,jdbcType=VARCHAR},
+      TOTAL_FLOW_LINK_TIME = #{totalFlowLinkTime,jdbcType=VARCHAR},
+      DEMAND_FLOW_LINK_TIME = #{demandFlowLinkTime,jdbcType=VARCHAR},
+      SCH_FLOW_LINK_TIME = #{schFlowLinkTime,jdbcType=VARCHAR},
+      ES_FLOW_LINK_TIME = #{esFlowLinkTime,jdbcType=VARCHAR},
+      RESULT_FLOW_LINK_TIME = #{resultFlowLinkTime,jdbcType=VARCHAR},
+      CONTRACT_FLOW_LINK_TIME = #{contractFlowLinkTime,jdbcType=VARCHAR},
+      PTB_CREATION_DATE = #{ptbCreationDate,jdbcType=DATE},
+      PTB_CREATED_BY = #{ptbCreatedBy,jdbcType=VARCHAR},
+      PTB_LAST_UPDATE_DATE = #{ptbLastUpdateDate,jdbcType=DATE},
+      PTB_LAST_UPDATED_BY = #{ptbLastUpdatedBy,jdbcType=VARCHAR},
+      PTB_ENABLE_FLAG = #{ptbEnableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR}
+    where KEY_ID = #{keyId,jdbcType=VARCHAR}
+  </update>
+</mapper>

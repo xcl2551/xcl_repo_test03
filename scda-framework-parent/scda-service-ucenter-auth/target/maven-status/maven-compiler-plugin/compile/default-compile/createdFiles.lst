@@ -1,0 +1,11 @@
+com\pccw\ucenter\auth\service\UserJwt.class
+com\pccw\ucenter\auth\service\UserDetailsServiceImpl.class
+com\pccw\ucenter\auth\service\AuthService$1.class
+com\pccw\ucenter\auth\UcenterAuthApplication.class
+com\pccw\ucenter\auth\client\UserAuthClient.class
+com\pccw\ucenter\auth\config\AuthorizationServerConfig.class
+com\pccw\ucenter\auth\config\WebSecurityConfig.class
+com\pccw\ucenter\auth\config\CustomUserAuthenticationConverter.class
+com\pccw\ucenter\auth\config\MvcConfigurerConfig.class
+com\pccw\ucenter\auth\controller\AuthController.class
+com\pccw\ucenter\auth\service\AuthService.class

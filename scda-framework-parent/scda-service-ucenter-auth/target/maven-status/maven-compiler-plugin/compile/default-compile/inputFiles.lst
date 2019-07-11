@@ -1,0 +1,10 @@
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\config\MvcConfigurerConfig.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\config\WebSecurityConfig.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\controller\AuthController.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\config\AuthorizationServerConfig.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\config\CustomUserAuthenticationConverter.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\client\UserAuthClient.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\service\AuthService.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\UcenterAuthApplication.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\service\UserDetailsServiceImpl.java
+E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth\src\main\java\com\pccw\ucenter\auth\service\UserJwt.java

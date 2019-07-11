@@ -1,0 +1,17 @@
+com\pccw\purchasetime\mapper\ScdaPurTimeBaseMapper.class
+com\pccw\purchasetime\controller\ScdaPurDemandDetailController.class
+com\pccw\purchasetime\controller\ScdaPurTimeSummaryController.class
+com\pccw\purchasetime\mapper\ScdaPurDemandDetailMapper.class
+com\pccw\purchasetime\controller\ScdaPurTimeBaseController.class
+com\pccw\purchasetime\controller\ScdaPurTimeTotalSumController.class
+com\pccw\purchasetime\service\ScdaSchResAppTimeSumService.class
+com\pccw\purchasetime\PurchaseTimeApplication.class
+com\pccw\purchasetime\mapper\ScdaPurTimeTotalSumMapper.class
+com\pccw\purchasetime\service\ScdaPurTimeBaseService.class
+com\pccw\purchasetime\mapper\ScdaPurTimeSummaryMapper.class
+com\pccw\purchasetime\config\ResourceServerConfig.class
+com\pccw\purchasetime\controller\ScdaSchResAppTimeSumController.class
+com\pccw\purchasetime\mapper\ScdaSchResAppTimeSumMapper.class
+com\pccw\purchasetime\service\ScdaPurDemandDetailService.class
+com\pccw\purchasetime\service\ScdaPurTimeTotalSumService.class
+com\pccw\purchasetime\service\ScdaPurTimeSummaryService.class

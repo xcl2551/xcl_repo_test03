@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.ucenter.mapper.MmsEmployeesMapper" >
+    <resultMap id="baseResult" type="com.pccw.framework.domain.ucenter.pojo.MmsEmployees">
+        <id property="employeeid" column="employeeid" jdbcType="DECIMAL"/>
+        <result property="employeenumber" column="employeenumber" jdbcType="VARCHAR"/>
+        <result property="employeename" column="employeename" jdbcType="VARCHAR"/>
+        <result property="emailaddress" column="emailaddress" jdbcType="VARCHAR"/>
+        <result property="tel" column="tel" jdbcType="VARCHAR"/>
+        <result property="nickname" column="nickname" jdbcType="VARCHAR"/>
+        <result property="userid" column="userid" jdbcType="DECIMAL"/>
+        <result property="attribute1" column="attribute1" jdbcType="DECIMAL"/>
+        <result property="attribute2" column="attribute2" jdbcType="VARCHAR"/>
+        <result property="attribute3" column="attribute3" jdbcType="VARCHAR"/>
+        <result property="attribute4" column="attribute4" jdbcType="VARCHAR"/>
+        <result property="attribute5" column="attribute5" jdbcType="VARCHAR"/>
+        <result property="attribute6" column="attribute6" jdbcType="VARCHAR"/>
+        <result property="attribute7" column="attribute7" jdbcType="VARCHAR"/>
+        <result property="attribute8" column="attribute8" jdbcType="VARCHAR"/>
+        <result property="attribute9" column="attribute9" jdbcType="VARCHAR"/>
+        <result property="attribute10" column="attribute10" jdbcType="VARCHAR"/>
+        <result property="attribute11" column="attribute11" jdbcType="DECIMAL"/>
+        <result property="attribute12" column="attribute12" jdbcType="DECIMAL"/>
+        <result property="attribute13" column="attribute13" jdbcType="DECIMAL"/>
+        <result property="attribute14" column="attribute14" jdbcType="DECIMAL"/>
+        <result property="attribute15" column="attribute15" jdbcType="DECIMAL"/>
+        <result property="createdBy" column="created_by" jdbcType="VARCHAR"/>
+        <result property="creationDate" column="creation_date" jdbcType="DATE"/>
+        <result property="lastUpdatedBy" column="last_updated_by" jdbcType="VARCHAR"/>
+        <result property="lastUpdateDate" column="last_update_date" jdbcType="DATE"/>
+        <result property="screenname" column="screenname" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+
+    <select id="findByScreenname" parameterType="java.lang.String" resultMap="baseResult">
+        select * from  jtmms.mms_employees  memp  where memp.screenname = #{username}
+    </select>
+
+</mapper>

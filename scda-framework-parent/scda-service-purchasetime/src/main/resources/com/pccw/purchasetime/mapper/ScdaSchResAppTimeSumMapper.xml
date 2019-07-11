@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.purchasetime.mapper.ScdaSchResAppTimeSumMapper" >
+  <resultMap id="BaseResultMap" type="com.pccw.framework.domain.purchasetime.ScdaSchResAppTimeSum" >
+    <id column="KEY_ID" property="keyId" jdbcType="VARCHAR" />
+    <result column="DEADLINE_DATE" property="deadlineDate" jdbcType="VARCHAR" />
+    <result column="SCHEME_AVE_TIME" property="schemeAveTime" jdbcType="VARCHAR" />
+    <result column="RESULT_AVE_TIME" property="resultAveTime" jdbcType="VARCHAR" />
+    <result column="COUNTERSIGN_DEPT_SCHEME_APP" property="countersignDeptSchemeApp" jdbcType="VARCHAR" />
+    <result column="COUNTERSIGN_DEPT_RESULT_APP" property="countersignDeptResultApp" jdbcType="VARCHAR" />
+    <result column="COUNTERSIGN_SCHEME" property="countersignScheme" jdbcType="VARCHAR" />
+    <result column="COUNTERSIGN_RESULT" property="countersignResult" jdbcType="VARCHAR" />
+    <result column="CREATION_DATE" property="creationDate" jdbcType="DATE" />
+    <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR" />
+    <result column="LAST_UPDATE_DATE" property="lastUpdateDate" jdbcType="DATE" />
+    <result column="LAST_UPDATED_BY" property="lastUpdatedBy" jdbcType="VARCHAR" />
+    <result column="ENABLE_FLAG" property="enableFlag" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE1" property="attribute1" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE2" property="attribute2" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE3" property="attribute3" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE4" property="attribute4" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE5" property="attribute5" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE6" property="attribute6" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE7" property="attribute7" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE8" property="attribute8" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE9" property="attribute9" jdbcType="VARCHAR" />
+    <result column="ATTRIBUTE10" property="attribute10" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    KEY_ID, DEADLINE_DATE, SCHEME_AVE_TIME, RESULT_AVE_TIME, COUNTERSIGN_DEPT_SCHEME_APP, 
+    COUNTERSIGN_DEPT_RESULT_APP, COUNTERSIGN_SCHEME, COUNTERSIGN_RESULT, CREATION_DATE, 
+    CREATED_BY, LAST_UPDATE_DATE, LAST_UPDATED_BY, ENABLE_FLAG, ATTRIBUTE1, ATTRIBUTE2, 
+    ATTRIBUTE3, ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9, 
+    ATTRIBUTE10
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.pccw.framework.domain.purchasetime.ScdaSchResAppTimeSumExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from SCDA_SCH_RES_APP_TIME_SUM
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from SCDA_SCH_RES_APP_TIME_SUM
+    where KEY_ID = #{keyId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from SCDA_SCH_RES_APP_TIME_SUM
+    where KEY_ID = #{keyId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.pccw.framework.domain.purchasetime.ScdaSchResAppTimeSumExample" >
+    delete from SCDA_SCH_RES_APP_TIME_SUM
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.pccw.framework.domain.purchasetime.ScdaSchResAppTimeSum" >
+    insert into SCDA_SCH_RES_APP_TIME_SUM (KEY_ID, DEADLINE_DATE, SCHEME_AVE_TIME, 
+      RESULT_AVE_TIME, COUNTERSIGN_DEPT_SCHEME_APP, 
+      COUNTERSIGN_DEPT_RESULT_APP, COUNTERSIGN_SCHEME, 
+      COUNTERSIGN_RESULT, CREATION_DATE, CREATED_BY, 
+      LAST_UPDATE_DATE, LAST_UPDATED_BY, ENABLE_FLAG, 
+      ATTRIBUTE1, ATTRIBUTE2, ATTRIBUTE3, 
+      ATTRIBUTE4, ATTRIBUTE5, ATTRIBUTE6, 
+      ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9, 
+      ATTRIBUTE10)
+    values (#{keyId,jdbcType=VARCHAR}, #{deadlineDate,jdbcType=VARCHAR}, #{schemeAveTime,jdbcType=VARCHAR}, 
+      #{resultAveTime,jdbcType=VARCHAR}, #{countersignDeptSchemeApp,jdbcType=VARCHAR}, 
+      #{countersignDeptResultApp,jdbcType=VARCHAR}, #{countersignScheme,jdbcType=VARCHAR}, 
+      #{countersignResult,jdbcType=VARCHAR}, #{creationDate,jdbcType=DATE}, #{createdBy,jdbcType=VARCHAR}, 
+      #{lastUpdateDate,jdbcType=DATE}, #{lastUpdatedBy,jdbcType=VARCHAR}, #{enableFlag,jdbcType=VARCHAR}, 
+      #{attribute1,jdbcType=VARCHAR}, #{attribute2,jdbcType=VARCHAR}, #{attribute3,jdbcType=VARCHAR}, 
+      #{attribute4,jdbcType=VARCHAR}, #{attribute5,jdbcType=VARCHAR}, #{attribute6,jdbcType=VARCHAR}, 
+      #{attribute7,jdbcType=VARCHAR}, #{attribute8,jdbcType=VARCHAR}, #{attribute9,jdbcType=VARCHAR}, 
+      #{attribute10,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.pccw.framework.domain.purchasetime.ScdaSchResAppTimeSum" >
+    insert into SCDA_SCH_RES_APP_TIME_SUM
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="keyId != null" >
+        KEY_ID,
+      </if>
+      <if test="deadlineDate != null" >
+        DEADLINE_DATE,
+      </if>
+      <if test="schemeAveTime != null" >
+        SCHEME_AVE_TIME,
+      </if>
+      <if test="resultAveTime != null" >
+        RESULT_AVE_TIME,
+      </if>
+      <if test="countersignDeptSchemeApp != null" >
+        COUNTERSIGN_DEPT_SCHEME_APP,
+      </if>
+      <if test="countersignDeptResultApp != null" >
+        COUNTERSIGN_DEPT_RESULT_APP,
+      </if>
+      <if test="countersignScheme != null" >
+        COUNTERSIGN_SCHEME,
+      </if>
+      <if test="countersignResult != null" >
+        COUNTERSIGN_RESULT,
+      </if>
+      <if test="creationDate != null" >
+        CREATION_DATE,
+      </if>
+      <if test="createdBy != null" >
+        CREATED_BY,
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE,
+      </if>
+      <if test="lastUpdatedBy != null" >
+        LAST_UPDATED_BY,
+      </if>
+      <if test="enableFlag != null" >
+        ENABLE_FLAG,
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1,
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2,
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3,
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4,
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5,
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6,
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7,
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8,
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9,
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="keyId != null" >
+        #{keyId,jdbcType=VARCHAR},
+      </if>
+      <if test="deadlineDate != null" >
+        #{deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="schemeAveTime != null" >
+        #{schemeAveTime,jdbcType=VARCHAR},
+      </if>
+      <if test="resultAveTime != null" >
+        #{resultAveTime,jdbcType=VARCHAR},
+      </if>
+      <if test="countersignDeptSchemeApp != null" >
+        #{countersignDeptSchemeApp,jdbcType=VARCHAR},
+      </if>
+      <if test="countersignDeptResultApp != null" >
+        #{countersignDeptResultApp,jdbcType=VARCHAR},
+      </if>
+      <if test="countersignScheme != null" >
+        #{countersignScheme,jdbcType=VARCHAR},
+      </if>
+      <if test="countersignResult != null" >
+        #{countersignResult,jdbcType=VARCHAR},
+      </if>
+      <if test="creationDate != null" >
+        #{creationDate,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="lastUpdatedBy != null" >
+        #{lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="enableFlag != null" >
+        #{enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.pccw.framework.domain.purchasetime.ScdaSchResAppTimeSumExample" resultType="java.lang.Integer" >
+    select count(*) from SCDA_SCH_RES_APP_TIME_SUM
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update SCDA_SCH_RES_APP_TIME_SUM
+    <set >
+      <if test="record.keyId != null" >
+        KEY_ID = #{record.keyId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deadlineDate != null" >
+        DEADLINE_DATE = #{record.deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.schemeAveTime != null" >
+        SCHEME_AVE_TIME = #{record.schemeAveTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.resultAveTime != null" >
+        RESULT_AVE_TIME = #{record.resultAveTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.countersignDeptSchemeApp != null" >
+        COUNTERSIGN_DEPT_SCHEME_APP = #{record.countersignDeptSchemeApp,jdbcType=VARCHAR},
+      </if>
+      <if test="record.countersignDeptResultApp != null" >
+        COUNTERSIGN_DEPT_RESULT_APP = #{record.countersignDeptResultApp,jdbcType=VARCHAR},
+      </if>
+      <if test="record.countersignScheme != null" >
+        COUNTERSIGN_SCHEME = #{record.countersignScheme,jdbcType=VARCHAR},
+      </if>
+      <if test="record.countersignResult != null" >
+        COUNTERSIGN_RESULT = #{record.countersignResult,jdbcType=VARCHAR},
+      </if>
+      <if test="record.creationDate != null" >
+        CREATION_DATE = #{record.creationDate,jdbcType=DATE},
+      </if>
+      <if test="record.createdBy != null" >
+        CREATED_BY = #{record.createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="record.lastUpdatedBy != null" >
+        LAST_UPDATED_BY = #{record.lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.enableFlag != null" >
+        ENABLE_FLAG = #{record.enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute1 != null" >
+        ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute2 != null" >
+        ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute3 != null" >
+        ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute4 != null" >
+        ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute5 != null" >
+        ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute6 != null" >
+        ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute7 != null" >
+        ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute8 != null" >
+        ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute9 != null" >
+        ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attribute10 != null" >
+        ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update SCDA_SCH_RES_APP_TIME_SUM
+    set KEY_ID = #{record.keyId,jdbcType=VARCHAR},
+      DEADLINE_DATE = #{record.deadlineDate,jdbcType=VARCHAR},
+      SCHEME_AVE_TIME = #{record.schemeAveTime,jdbcType=VARCHAR},
+      RESULT_AVE_TIME = #{record.resultAveTime,jdbcType=VARCHAR},
+      COUNTERSIGN_DEPT_SCHEME_APP = #{record.countersignDeptSchemeApp,jdbcType=VARCHAR},
+      COUNTERSIGN_DEPT_RESULT_APP = #{record.countersignDeptResultApp,jdbcType=VARCHAR},
+      COUNTERSIGN_SCHEME = #{record.countersignScheme,jdbcType=VARCHAR},
+      COUNTERSIGN_RESULT = #{record.countersignResult,jdbcType=VARCHAR},
+      CREATION_DATE = #{record.creationDate,jdbcType=DATE},
+      CREATED_BY = #{record.createdBy,jdbcType=VARCHAR},
+      LAST_UPDATE_DATE = #{record.lastUpdateDate,jdbcType=DATE},
+      LAST_UPDATED_BY = #{record.lastUpdatedBy,jdbcType=VARCHAR},
+      ENABLE_FLAG = #{record.enableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{record.attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{record.attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{record.attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{record.attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{record.attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{record.attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{record.attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{record.attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{record.attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{record.attribute10,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pccw.framework.domain.purchasetime.ScdaSchResAppTimeSum" >
+    update SCDA_SCH_RES_APP_TIME_SUM
+    <set >
+      <if test="deadlineDate != null" >
+        DEADLINE_DATE = #{deadlineDate,jdbcType=VARCHAR},
+      </if>
+      <if test="schemeAveTime != null" >
+        SCHEME_AVE_TIME = #{schemeAveTime,jdbcType=VARCHAR},
+      </if>
+      <if test="resultAveTime != null" >
+        RESULT_AVE_TIME = #{resultAveTime,jdbcType=VARCHAR},
+      </if>
+      <if test="countersignDeptSchemeApp != null" >
+        COUNTERSIGN_DEPT_SCHEME_APP = #{countersignDeptSchemeApp,jdbcType=VARCHAR},
+      </if>
+      <if test="countersignDeptResultApp != null" >
+        COUNTERSIGN_DEPT_RESULT_APP = #{countersignDeptResultApp,jdbcType=VARCHAR},
+      </if>
+      <if test="countersignScheme != null" >
+        COUNTERSIGN_SCHEME = #{countersignScheme,jdbcType=VARCHAR},
+      </if>
+      <if test="countersignResult != null" >
+        COUNTERSIGN_RESULT = #{countersignResult,jdbcType=VARCHAR},
+      </if>
+      <if test="creationDate != null" >
+        CREATION_DATE = #{creationDate,jdbcType=DATE},
+      </if>
+      <if test="createdBy != null" >
+        CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateDate != null" >
+        LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      </if>
+      <if test="lastUpdatedBy != null" >
+        LAST_UPDATED_BY = #{lastUpdatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="enableFlag != null" >
+        ENABLE_FLAG = #{enableFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute1 != null" >
+        ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute2 != null" >
+        ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute3 != null" >
+        ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute4 != null" >
+        ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute5 != null" >
+        ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute6 != null" >
+        ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute7 != null" >
+        ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute8 != null" >
+        ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute9 != null" >
+        ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      </if>
+      <if test="attribute10 != null" >
+        ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where KEY_ID = #{keyId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pccw.framework.domain.purchasetime.ScdaSchResAppTimeSum" >
+    update SCDA_SCH_RES_APP_TIME_SUM
+    set DEADLINE_DATE = #{deadlineDate,jdbcType=VARCHAR},
+      SCHEME_AVE_TIME = #{schemeAveTime,jdbcType=VARCHAR},
+      RESULT_AVE_TIME = #{resultAveTime,jdbcType=VARCHAR},
+      COUNTERSIGN_DEPT_SCHEME_APP = #{countersignDeptSchemeApp,jdbcType=VARCHAR},
+      COUNTERSIGN_DEPT_RESULT_APP = #{countersignDeptResultApp,jdbcType=VARCHAR},
+      COUNTERSIGN_SCHEME = #{countersignScheme,jdbcType=VARCHAR},
+      COUNTERSIGN_RESULT = #{countersignResult,jdbcType=VARCHAR},
+      CREATION_DATE = #{creationDate,jdbcType=DATE},
+      CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      LAST_UPDATE_DATE = #{lastUpdateDate,jdbcType=DATE},
+      LAST_UPDATED_BY = #{lastUpdatedBy,jdbcType=VARCHAR},
+      ENABLE_FLAG = #{enableFlag,jdbcType=VARCHAR},
+      ATTRIBUTE1 = #{attribute1,jdbcType=VARCHAR},
+      ATTRIBUTE2 = #{attribute2,jdbcType=VARCHAR},
+      ATTRIBUTE3 = #{attribute3,jdbcType=VARCHAR},
+      ATTRIBUTE4 = #{attribute4,jdbcType=VARCHAR},
+      ATTRIBUTE5 = #{attribute5,jdbcType=VARCHAR},
+      ATTRIBUTE6 = #{attribute6,jdbcType=VARCHAR},
+      ATTRIBUTE7 = #{attribute7,jdbcType=VARCHAR},
+      ATTRIBUTE8 = #{attribute8,jdbcType=VARCHAR},
+      ATTRIBUTE9 = #{attribute9,jdbcType=VARCHAR},
+      ATTRIBUTE10 = #{attribute10,jdbcType=VARCHAR}
+    where KEY_ID = #{keyId,jdbcType=VARCHAR}
+  </update>
+</mapper>

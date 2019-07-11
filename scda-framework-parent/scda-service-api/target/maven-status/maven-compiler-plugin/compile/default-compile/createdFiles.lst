@@ -1,0 +1,17 @@
+com\pccw\api\ucenter\UcenterAuthControllerApi.class
+com\pccw\api\purchaseexecute\ScdaGroupSizeBaseControllerApi.class
+com\pccw\api\purchasetime\ScdaPurTimeBaseControllerApi.class
+com\pccw\api\purchasecontrol\ScdaPdrAndPprControllerApi.class
+com\pccw\api\purchasecontrol\ScdaYearPurcDemandControllerApi.class
+com\pccw\api\config\Swagger2Configuration.class
+com\pccw\api\auth\AuthControllerApi.class
+com\pccw\api\purchaseexecute\ScdaYearPurcExecuteControllerApi.class
+com\pccw\api\purchasecontrol\ScdaBefyearTwodeptControllerApi.class
+com\pccw\api\purchasecontrol\ScdaDeptPurDemandandpreControllerApi.class
+com\pccw\api\purchasecontrol\ScdaYearTwodeptControllerApi.class
+com\pccw\api\purchaseexecute\ScdaActuallyOccurredBaseControllerApi.class
+com\pccw\api\purchasetime\ScdaPurTimeSummaryControllerApi.class
+com\pccw\api\purchasetime\ScdaPurTimeTotalSumControllerApi.class
+com\pccw\api\purchaseexecute\ScdaAoGsGroupbyControllerApi.class
+com\pccw\api\purchasetime\ScdaPurDemandDetailControllerApi.class
+com\pccw\api\purchasetime\ScdaSchResAppTimeSumControllerApi.class

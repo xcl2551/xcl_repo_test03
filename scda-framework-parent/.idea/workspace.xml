@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="057a719a-2023-40e7-a6ee-f234257ab72a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/scda-govern-center/pom.xml" afterPath="$PROJECT_DIR$/scda-govern-center/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/scda-govern-center/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/scda-govern-center/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/scda-service-createtablesql/src/main/java/com/pccw/createtablesql/service/ExcelService.java" afterPath="$PROJECT_DIR$/scda-service-createtablesql/src/main/java/com/pccw/createtablesql/service/ExcelService.java" />
+      <change beforePath="$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/config/ResourceServerConfig.java" afterPath="$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/config/ResourceServerConfig.java" />
+      <change beforePath="$PROJECT_DIR$/scda-service-purchasetime/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/scda-service-purchasetime/src/main/resources/application.yml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/scda-framework-common/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/scda-framework-utils/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-ucenter/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/scda-framework-model/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-scdaporequestprojects/target/" />
+    <ignored path="$PROJECT_DIR$/scda-govern-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-ucenter-auth/target/" />
+    <ignored path="$PROJECT_DIR$/scda-govern-center/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-purchasecontrol/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-task/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-purchaseexecute/target/" />
+    <ignored path="$PROJECT_DIR$/scda-freemaker-createjavafile/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-purchasetime/target/" />
+    <ignored path="$PROJECT_DIR$/scda-service-createtablesql/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/scda_framework_parent$PurchasdeControlApplication.coverage" NAME="PurchasdeControlApplication Coverage Results" MODIFIED="1554101628966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pccw.purchasecontrol.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ScdaPurTimeBaseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/controller/ScdaPurTimeBaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="66" column="82" lean-forward="true" selection-start-line="66" selection-start-column="82" selection-end-line="66" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScdaPurTimeBaseRequest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scda-framework-model/src/main/java/com/pccw/framework/domain/purchasetime/request/ScdaPurTimeBaseRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScdaPurTimeBaseService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/service/ScdaPurTimeBaseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2063">
+              <caret line="385" column="1" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="385" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceServerConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/config/ResourceServerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="669">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScdaGroupSizeBaseService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/service/ScdaGroupSizeBaseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4818">
+              <caret line="239" column="1" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="239" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScdaYearPurcExecuteService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/service/ScdaYearPurcExecuteService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2398">
+              <caret line="128" column="1" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="128" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scda-service-createtablesql/src/main/java/com/pccw/createtablesql/service/ExcelService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1782">
+              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2794">
+              <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>INVALID_PARAM</find>
+      <find>系统</find>
+      <find>.xml</find>
+      <find>&lt;id</find>
+      <find>scdaPurTimeTotal</find>
+      <find>BaseResultMap</find>
+      <find>resultMap</find>
+      <find>&lt;/resultMap&gt;</find>
+      <find>&lt;sql id=&quot;Example_Where_Clause&quot;&gt;</find>
+      <find>&lt;/mapper&gt;</find>
+      <find>&lt;resultMap id=&quot;BaseResultMap&quot;</find>
+      <find>getRepeatScdaGroupSizeBaseList</find>
+      <find>synScdaYearPurcExecute</find>
+      <find>default-property-inclusion</find>
+      <find>purchaseExecuteRequest</find>
+      <find>scdaPdrAndPpr</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>${javaTableName?uncap_first}</replace>
+      <replace>scdaActuallyOccurredBase</replace>
+      <replace>scdaGroupSizeBase</replace>
+      <replace>scdaPurTimeBase</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\BI-SCDA\scda-framework-parent</dir>
+    </dirStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scda-service-createtablesql/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/scda-service-purchasecontrol/pom.xml" />
+        <option value="$PROJECT_DIR$/scda-service-createtablesql/src/main/java/com/pccw/createtablesql/controller/ExcelController.java" />
+        <option value="$PROJECT_DIR$/scda-framework-utils/src/main/java/com/pccw/framework/utils/FileUtil.java" />
+        <option value="$PROJECT_DIR$/scda-freemaker-createjavafile/src/main/java/com/pccw/createjavafile/service/TableDetailService.java" />
+        <option value="$PROJECT_DIR$/scda-framework-utils/src/main/java/com/pccw/framework/utils/ScdaDateFormartUtil.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/service/ScdaPdrAndPprService.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchaseexecute/pom.xml" />
+        <option value="$PROJECT_DIR$/scda-freemaker-createjavafile/src/test/resources/templates/tablePojoGet.ftl" />
+        <option value="$PROJECT_DIR$/scda-service-api/src/main/java/com/pccw/api/purchaseexecute/ScdaGroupSizeBaseControllerApi.java" />
+        <option value="$PROJECT_DIR$/scda-service-api/src/main/java/com/pccw/api/purchaseexecute/ScdaActuallyOccurredBaseControllerApi.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/service/ScdaGroupSizeBaseService.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/service/ScdaActuallyOccurredBaseService.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/config/ResourceServerConfig.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasecontrol/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/scda-service-purchaseexecute/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/scda-service-task/src/test/java/com/pccw/task/PurchaseexecuteServiceTest.java" />
+        <option value="$PROJECT_DIR$/scda-service-task/src/test/java/com/pccw/task/PurchasecontrolServiceTest.java" />
+        <option value="$PROJECT_DIR$/scda-service-task/src/test/java/com/pccw/task/PurchaseexecuteTest.java" />
+        <option value="$PROJECT_DIR$/scda-service-task/src/test/java/com/pccw/task/PurchasecontrolTest.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/mapper/ScdaPurTimeBaseMapper.java" />
+        <option value="$PROJECT_DIR$/scda-service-api/src/main/java/com/pccw/api/purchasetime/ScdaPurTimeSummaryControllerApi.java" />
+        <option value="$PROJECT_DIR$/scda-framework-model/src/main/java/com/pccw/framework/domain/purchasetime/request/ScdaPurTimeBaseRequest.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/config/ResourceServerConfig.java" />
+        <option value="$PROJECT_DIR$/scda-service-api/src/main/java/com/pccw/api/purchasetime/ScdaPurTimeBaseControllerApi.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasetime/pom.xml" />
+        <option value="$PROJECT_DIR$/scda-freemaker-createjavafile/src/test/java/com/pccw/createjavafile/TableDetailServiceTest.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/service/ScdaPurTimeBaseService.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/controller/ScdaActuallyOccurredBaseController.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/controller/ScdaGroupSizeBaseController.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/controller/ScdaPurTimeBaseController.java" />
+        <option value="$PROJECT_DIR$/scda-framework-model/src/main/java/com/pccw/framework/domain/ucenter/pojo/MmsEmployees.java" />
+        <option value="$PROJECT_DIR$/scda-service-ucenter/src/main/java/com/pccw/ucenter/mapper/MmsEmployeesMapper.java" />
+        <option value="$PROJECT_DIR$/scda-service-ucenter/src/test/java/com/pccw/ucenter/TestSpringDataJpa.java" />
+        <option value="$PROJECT_DIR$/scda-service-ucenter/src/main/java/com/pccw/ucenter/controller/UcenterAuthController.java" />
+        <option value="$PROJECT_DIR$/scda-govern-center/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/scda-service-ucenter-auth/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/scda-service-ucenter/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/scda-service-ucenter/src/main/resources/com/pccw/ucenter/mapper/MmsEmployeesMapper.xml" />
+        <option value="$PROJECT_DIR$/scda-service-ucenter/src/main/java/com/pccw/ucenter/service/UserAuthService.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasecontrol/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/PurchasdeControlApplication.java" />
+        <option value="$PROJECT_DIR$/scda-service-api/src/main/java/com/pccw/api/purchasecontrol/ScdaPdrAndPprControllerApi.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/controller/ScdaPdrAndPprController.java" />
+        <option value="$PROJECT_DIR$/scda-framework-model/src/main/java/com/pccw/framework/domain/purchasecontrol/response/ScdaPdrAndPprResult.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/scda-govern-center/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/scda-govern-center/pom.xml" />
+        <option value="$PROJECT_DIR$/scda-service-createtablesql/src/main/java/com/pccw/createtablesql/service/ExcelService.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/config/ResourceServerConfig.java" />
+        <option value="$PROJECT_DIR$/scda-service-purchasetime/src/main/resources/application.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/maven/apache-maven-3.3.9" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="scda-framework-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="scda-framework-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="scda-service-ucenter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="scda-service-ucenter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="305" />
+    <option name="y" value="255" />
+    <option name="width" value="1346" />
+    <option name="height" value="676" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaInjectionPointsAutowiringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="pccw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="pccw" type="462c0819:PsiDirectoryNode" />
+              <item name="purchasetime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="pccw" type="462c0819:PsiDirectoryNode" />
+              <item name="purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="pccw" type="462c0819:PsiDirectoryNode" />
+              <item name="purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="pccw" type="462c0819:PsiDirectoryNode" />
+              <item name="purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="pccw" type="462c0819:PsiDirectoryNode" />
+              <item name="purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scda-framework-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scda-framework-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scda-service-purchasetime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="show.run.dashboard.notification" value="false" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3770115" />
+    <property name="ToolWindowAnt Build.ShowToolbar" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pccw.ucenter.mapper" />
+      <recent name="com.pccw.purchasetime.mapper" />
+      <recent name="com.pccw.purchasetime.config" />
+      <recent name="com.pccw.createtablesql" />
+      <recent name="com.pccw.purchasetime.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\BI-SCDA\scda-framework-parent\scda-service-ucenter\src\main\resources\com\pccw\ucenter\mapper" />
+      <recent name="E:\BI-SCDA\scda-framework-parent\scda-service-purchasetime\src\main\resources\com\pccw\purchasetime\mapper" />
+      <recent name="E:\BI-SCDA\scda-framework-parent\scda-framework-model\src\main\java\com\pccw\framework\domain\purchasetime" />
+      <recent name="E:\BI-SCDA\scda-framework-parent\scda-freemaker-createjavafile\src\test\resources\templates" />
+      <recent name="E:\BI-SCDA\scda-framework-parent\scda-service-createtablesql\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PurchaseTimeApplication">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="ADDceshiyonghu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pccw.ucenter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.pccw.ucenter.ADDceshiyonghu" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="scda-service-ucenter" />
+      <envs />
+    </configuration>
+    <configuration name="ScdaDateFormartUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pccw.framework.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.pccw.framework.utils.ScdaDateFormartUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="scda-framework-utils" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="TableDetailServiceTest.testGetAutoClassFromOracleTableName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pccw.createjavafile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="scda-freemaker-createjavafile" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.pccw.createjavafile" />
+      <option name="MAIN_CLASS_NAME" value="com.pccw.createjavafile.TableDetailServiceTest" />
+      <option name="METHOD_NAME" value="testGetAutoClassFromOracleTableName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TableDetailServiceTest.testGetGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pccw.createjavafile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="scda-freemaker-createjavafile" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.pccw.createjavafile" />
+      <option name="MAIN_CLASS_NAME" value="com.pccw.createjavafile.TableDetailServiceTest" />
+      <option name="METHOD_NAME" value="testGetGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestSpringDataJpa.testFindByscreenName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pccw.ucenter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="scda-service-ucenter" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.pccw.ucenter" />
+      <option name="MAIN_CLASS_NAME" value="com.pccw.ucenter.TestSpringDataJpa" />
+      <option name="METHOD_NAME" value="testFindByscreenName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="注册中心1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="scda启动流程">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.govern.center.GovernCenterApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="scda-govern-center" />
+      <envs />
+    </configuration>
+    <configuration name="登录认证3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="scda启动流程">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.ucenter.auth.UcenterAuthApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="scda-service-ucenter-auth" />
+      <envs />
+    </configuration>
+    <configuration name="CreateJavaFileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.createjavafile.CreateJavaFileApplication" />
+      <module name="scda-freemaker-createjavafile" />
+      <envs />
+    </configuration>
+    <configuration name="CreateTableSqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.createtablesql.CreateTableSqlApplication" />
+      <module name="scda-service-createtablesql" />
+      <envs />
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.govern.gateway.GatewayApplication" />
+      <module name="scda-govern-gateway" />
+      <envs />
+    </configuration>
+    <configuration name="PurchasdeControlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.purchasecontrol.PurchasdeControlApplication" />
+      <module name="scda-service-purchasecontrol" />
+      <envs />
+    </configuration>
+    <configuration name="PurchaseExecuteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.purchaseexecute.PurchaseExecuteApplication" />
+      <module name="scda-service-purchaseexecute" />
+      <envs />
+    </configuration>
+    <configuration name="PurchaseTimeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pccw.purchasetime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.purchasetime.PurchaseTimeApplication" />
+      <module name="scda-service-purchasetime" />
+      <envs />
+    </configuration>
+    <configuration name="ScdaTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.task.ScdaTaskApplication" />
+      <module name="scda-service-task" />
+      <envs />
+    </configuration>
+    <configuration name="UcenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pccw.ucenter.UcenterApplication" />
+      <module name="scda-service-ucenter" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="14">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.注册中心1" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.登录认证3" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.CreateJavaFileApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.PurchaseExecuteApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.PurchasdeControlApplication" />
+      <item index="5" class="java.lang.String" itemvalue="Spring Boot.UcenterApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.GatewayApplication" />
+      <item index="7" class="java.lang.String" itemvalue="Spring Boot.ScdaTaskApplication" />
+      <item index="8" class="java.lang.String" itemvalue="Spring Boot.CreateTableSqlApplication" />
+      <item index="9" class="java.lang.String" itemvalue="Spring Boot.PurchaseTimeApplication" />
+      <item index="10" class="java.lang.String" itemvalue="Application.ScdaDateFormartUtil" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.TableDetailServiceTest.testGetAutoClassFromOracleTableName" />
+      <item index="12" class="java.lang.String" itemvalue="JUnit.TableDetailServiceTest.testGetGet" />
+      <item index="13" class="java.lang.String" itemvalue="JUnit.TestSpringDataJpa.testFindByscreenName" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.PurchaseTimeApplication" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestSpringDataJpa.testFindByscreenName" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TableDetailServiceTest.testGetGet" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TableDetailServiceTest.testGetAutoClassFromOracleTableName" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ScdaDateFormartUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\xcl\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-framework-common" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-framework-common" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-framework-model" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-framework-model" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-framework-utils" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-framework-utils" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-freemaker-createjavafile" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-freemaker-createjavafile" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-govern-center" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-govern-center" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-govern-gateway" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-govern-gateway" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-api" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-api" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-createtablesql" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-createtablesql" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-purchasecontrol" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-purchasecontrol" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-purchaseexecute" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-purchaseexecute" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-purchasetime" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-purchasetime" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-task" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-task" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-ucenter" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-ucenter" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent\scda-service-ucenter-auth" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BI-SCDA\scda-framework-parent" />
+          <option name="myCopyRoot" value="E:\BI-SCDA\scda-framework-parent" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="057a719a-2023-40e7-a6ee-f234257ab72a" name="Default" comment="" />
+      <created>1553736870946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553736870946</updated>
+      <workItem from="1553736876805" duration="2636000" />
+      <workItem from="1553821845207" duration="940000" />
+      <workItem from="1553823257424" duration="10001000" />
+      <workItem from="1553840545215" duration="254000" />
+      <workItem from="1553840813467" duration="669000" />
+      <workItem from="1553841667128" duration="12384000" />
+      <workItem from="1554081799627" duration="4687000" />
+      <workItem from="1554087021571" duration="8738000" />
+      <workItem from="1554103787047" duration="8449000" />
+      <workItem from="1554168346855" duration="7410000" />
+      <workItem from="1554183736548" duration="698000" />
+      <workItem from="1554184592741" duration="5561000" />
+      <workItem from="1554197828189" duration="2196000" />
+      <workItem from="1554255316779" duration="5914000" />
+      <workItem from="1554270652814" duration="9498000" />
+      <workItem from="1554341557416" duration="3574000" />
+      <workItem from="1554361823243" duration="6548000" />
+      <workItem from="1554604095435" duration="461000" />
+      <workItem from="1554686200278" duration="13071000" />
+      <workItem from="1554772115256" duration="12978000" />
+      <workItem from="1554861278550" duration="3978000" />
+      <workItem from="1554945858631" duration="6966000" />
+      <workItem from="1554974461043" duration="1997000" />
+      <workItem from="1555118519677" duration="18142000" />
+      <workItem from="1555143328986" duration="721000" />
+      <workItem from="1555144198178" duration="120000" />
+      <workItem from="1555144361505" duration="91000" />
+      <workItem from="1555145072322" duration="4635000" />
+      <workItem from="1555206167471" duration="12294000" />
+      <workItem from="1555233749643" duration="1924000" />
+      <workItem from="1555290661031" duration="21128000" />
+      <workItem from="1555377489647" duration="23621000" />
+      <workItem from="1555463845663" duration="12274000" />
+      <workItem from="1555550009041" duration="605000" />
+      <workItem from="1555664362248" duration="4580000" />
+      <workItem from="1555896433455" duration="25979000" />
+      <workItem from="1555983004815" duration="18451000" />
+      <workItem from="1556073812605" duration="2186000" />
+      <workItem from="1556083462905" duration="3693000" />
+      <workItem from="1556099097866" duration="60000" />
+      <workItem from="1556155339337" duration="1349000" />
+      <workItem from="1556171284668" duration="8217000" />
+      <workItem from="1556241515513" duration="14569000" />
+      <workItem from="1556414226673" duration="17713000" />
+      <workItem from="1556440893434" duration="2935000" />
+      <workItem from="1556500577888" duration="9270000" />
+      <workItem from="1556586699911" duration="7079000" />
+      <workItem from="1557020365892" duration="12554000" />
+      <workItem from="1557045528882" duration="7655000" />
+      <workItem from="1557105803404" duration="14510000" />
+      <workItem from="1557294873726" duration="8539000" />
+      <workItem from="1557364655295" duration="10777000" />
+      <workItem from="1557453997564" duration="3341000" />
+      <workItem from="1557714104166" duration="1263000" />
+      <workItem from="1557741261552" duration="588000" />
+      <workItem from="1557801335257" duration="380000" />
+      <workItem from="1557811428005" duration="3711000" />
+      <workItem from="1557975848410" duration="5683000" />
+      <workItem from="1558403726421" duration="873000" />
+      <workItem from="1558405292765" duration="317000" />
+      <workItem from="1558492450227" duration="578000" />
+      <workItem from="1558505000293" duration="25000" />
+      <workItem from="1558689411256" duration="1268000" />
+      <workItem from="1558919666861" duration="8489000" />
+      <workItem from="1559011949542" duration="2605000" />
+      <workItem from="1559094373225" duration="809000" />
+      <workItem from="1559096660604" duration="254000" />
+      <workItem from="1559110522979" duration="6067000" />
+      <workItem from="1559185130497" duration="1671000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TableDetailServiceTest_testGetGet - 2019.05.06 at 10h 51m 31s.xml">
+      <configuration name="TableDetailServiceTest.testGetGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableDetailServiceTest_testGetGet - 2019.05.06 at 14h 45m 45s.xml">
+      <configuration name="TableDetailServiceTest.testGetGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableDetailServiceTest_testGetResquestClass - 2019.04.22 at 16h 26m 58s.xml">
+      <configuration name="TableDetailServiceTest.testGetResquestClass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableDetailServiceTest_testGetResquestClass - 2019.04.22 at 16h 28m 10s.xml">
+      <configuration name="TableDetailServiceTest.testGetResquestClass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringDataJpa_testFindByscreenName - 2019.05.09 at 11h 08m 47s.xml">
+      <configuration name="TestSpringDataJpa.testFindByscreenName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringDataJpa_testFindByscreenName - 2019.05.09 at 11h 13m 55s.xml">
+      <configuration name="TestSpringDataJpa.testFindByscreenName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringDataJpa_testFindByscreenName - 2019.05.09 at 11h 15m 07s.xml">
+      <configuration name="TestSpringDataJpa.testFindByscreenName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringDataJpa_testFindByscreenName - 2019.05.09 at 11h 18m 05s.xml">
+      <configuration name="TestSpringDataJpa.testFindByscreenName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringDataJpa_testFindByscreenName - 2019.05.09 at 11h 19m 05s.xml">
+      <configuration name="TestSpringDataJpa.testFindByscreenName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringDataJpa_testFindByscreenName - 2019.05.09 at 11h 20m 39s.xml">
+      <configuration name="TestSpringDataJpa.testFindByscreenName" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="433201000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35341153" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1913646" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46521738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22717391" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38586956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29584223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/scda-govern-gateway/src/main/java/com/pccw/govern/gateway/filter/LoginFilter.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="90" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/scda-govern-center/scda-govern-center.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-center/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-center/src/main/java/com/pccw/govern/center/listener/EurekaInstanceCanceledListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="55" column="1" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="55" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-center/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-center/src/main/java/com/pccw/govern/center/GovernCenterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#427#428#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-center/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-gateway/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="139" column="12" lean-forward="true" selection-start-line="139" selection-start-column="12" selection-end-line="139" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter/src/main/java/com/pccw/ucenter/controller/UcenterAuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter/src/main/java/com/pccw/ucenter/service/UserAuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter-auth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="159" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter-auth/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter-auth/src/main/java/com/pccw/ucenter/auth/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="139" column="1" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="139" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter-auth/src/main/java/com/pccw/ucenter/auth/service/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="194" column="1" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="194" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter-auth/src/main/java/com/pccw/ucenter/auth/service/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="82" column="1" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="82" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-ucenter-auth/src/main/java/com/pccw/ucenter/auth/service/UserJwt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1179">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-gateway/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="23" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-gateway/src/main/java/com/pccw/govern/gateway/service/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-govern-gateway/src/main/java/com/pccw/govern/gateway/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="112" column="1" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="112" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/controller/ScdaBefyearTwodeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/controller/ScdaDeptPurDemandandpreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/controller/ScdaPdrAndPprController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="71" column="1" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/controller/ScdaYearPurcDemandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/controller/ScdaYearTwodeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/service/ScdaBefyearTwodeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="137" column="1" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/service/ScdaDeptPurDemandandpreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="154" column="1" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="154" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/service/ScdaPdrAndPprService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="281" column="1" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="281" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/service/ScdaYearPurcDemandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="148" column="1" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="148" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasecontrol/src/main/java/com/pccw/purchasecontrol/service/ScdaYearTwodeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="173" column="1" lean-forward="true" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-createtablesql/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-createtablesql/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-createtablesql/src/main/java/com/pccw/createtablesql/CreateTableSqlApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/controller/ScdaActuallyOccurredBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/controller/ScdaAoGsGroupbyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/controller/ScdaGroupSizeBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="56" column="1" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/controller/ScdaYearPurcExecuteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/service/ScdaActuallyOccurredBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4994">
+          <caret line="247" column="1" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="247" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/service/ScdaAoGsGroupbyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2552">
+          <caret line="136" column="1" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="136" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/service/ScdaGroupSizeBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4818">
+          <caret line="239" column="1" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="239" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchaseexecute/src/main/java/com/pccw/purchaseexecute/service/ScdaYearPurcExecuteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2398">
+          <caret line="128" column="1" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="128" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2794">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-createtablesql/src/main/java/com/pccw/createtablesql/service/ExcelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/config/ResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/service/ScdaPurTimeBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2063">
+          <caret line="385" column="1" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="385" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-service-purchasetime/src/main/java/com/pccw/purchasetime/controller/ScdaPurTimeBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="66" column="82" lean-forward="true" selection-start-line="66" selection-start-column="82" selection-end-line="66" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scda-framework-model/src/main/java/com/pccw/framework/domain/purchasetime/request/ScdaPurTimeBaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>scda-service-createtablesql</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3770115" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

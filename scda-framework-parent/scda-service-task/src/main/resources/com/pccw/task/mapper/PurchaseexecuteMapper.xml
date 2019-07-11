@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pccw.task.mapper.PurchaseexecuteMapper">
+    <!--同步mms基础数据到表 scda_pdr_and_ppr-->
+    <select id="synPurchaseexecute" parameterType="java.util.Map" statementType="CALLABLE">
+        {CALL  scda_task_syn_pck.scda_purchaseexecute_2_prc(
+        #{p_retcode,mode=OUT,jdbcType=VARCHAR},
+        #{p_errmsg,mode=OUT,jdbcType=VARCHAR},
+        #{p_msg,mode=OUT,jdbcType=VARCHAR}
+        )}
+    </select>
+</mapper>

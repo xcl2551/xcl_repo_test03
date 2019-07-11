@@ -1,0 +1,6 @@
+com\pccw\ucenter\UcenterApplication.class
+com\pccw\ucenter\mapper\ScdaCompanyUserAuthMapper.class
+com\pccw\ucenter\mapper\MmsEmployeesMapper.class
+com\pccw\ucenter\service\UserAuthService.class
+com\pccw\ucenter\controller\UcenterAuthController.class
+com\pccw\ucenter\mapper\ScdaUserAuthMapper.class

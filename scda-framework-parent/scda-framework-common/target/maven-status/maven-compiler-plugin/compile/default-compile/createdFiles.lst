@@ -1,0 +1,13 @@
+com\pccw\framework\exception\ExceptionCatch.class
+com\pccw\framework\model\response\CommonCode.class
+com\pccw\framework\model\response\QueryResult.class
+com\pccw\framework\model\response\ResultCode.class
+com\pccw\framework\model\request\RequestData.class
+com\pccw\framework\interceptor\FeignClientInterceptor.class
+com\pccw\framework\model\response\QueryResponseResult.class
+com\pccw\framework\exception\ExceptionCast.class
+com\pccw\framework\model\response\Response.class
+com\pccw\framework\client\ScdaServiceList.class
+com\pccw\framework\exception\CustomException.class
+com\pccw\framework\model\response\ResponseResult.class
+com\pccw\framework\web\BaseController.class

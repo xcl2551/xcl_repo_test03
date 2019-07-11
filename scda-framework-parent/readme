@@ -1,0 +1,11 @@
+
+服务名称                                     port
+scda-service-purchasecontrol                32001
+scda-service-purchaseexecute                32101
+scda-service-purchasetime                   32201
+scda-service-ucenter                        40300
+scda-service-ucenter-auth                   40400
+scda-govern-gateway                         50201
+scda-govern-center                          8301/8302
+scda-service-task                           40200
+scda-service-createtablesql                 40100
