@@ -1,0 +1,120 @@
+-- Create table  自定义第一张表
+create table scda_company(
+		id					varchar2(100),
+		name               varchar2(100),
+		logo              varchar2(100),
+		intro             varchar2(100),
+		email             varchar2(100),
+		mobile            varchar2(100),
+		linkname           varchar2(100),
+		identitypic       varchar2(100),
+		worktype          varchar2(100),
+		businesspic       varchar2(100),
+		status            varchar2(100)
+)
+pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table scda_company
+  add constraint scda_20190306001 primary key (id);
+  
+  
+-- Create table  自定义第二张表
+create table scda_company_userauth(
+		id				varchar2(100),
+		companyId              varchar2(100),
+		userId             varchar2(100)
+)
+pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table scda_company
+  add constraint scda_20190306002 primary key (id);
+
+
+-- Create table  自定义第三张表
+ 
+ create table Scda_UserAuth(
+ id              	 varchar2(100),
+ username            varchar2(100),
+ password            varchar2(100),
+ salt                varchar2(100),
+ name                varchar2(100),
+ utype               varchar2(100),
+ birthday            varchar2(100),
+ userpic             varchar2(100),
+ sex                 varchar2(100),
+ email               varchar2(100),
+ phone               varchar2(100),
+ status              varchar2(100),
+ createTime          date,
+ updateTime          date
+)
+pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table Scda_UserAuth
+  add constraint scda_20190306003 primary key (id);
+
+
+-- Create table  自定义第四张表
+ create table Scda_Menu(
+id				 varchar2(100),
+code             varchar2(100),
+pCode            varchar2(100),
+pId              varchar2(100),
+menuName         varchar2(100),
+url              varchar2(100),
+isMenu           varchar2(100),
+level            number(20),
+sort             number(20),
+status           varchar2(100),
+icon             varchar2(100),
+createTime       date,
+updateTime       date
+
+)
+pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table Scda_Menu
+  add constraint scda_20190306004 primary key (id);
+
+
+
+
+
+
+

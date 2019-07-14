@@ -1,0 +1,131 @@
+-- Drop table
+drop table SCDA_PO_PROJECTS ;
+-- Create table
+create table SCDA_PO_PROJECTS
+(
+  PMS_PROJECT_NUM              VARCHAR2(30) not null,
+  ES_NUM                       VARCHAR2(100),
+  PURCHASE_CONTENT             VARCHAR2(1000),
+  PMS_PROJECT_NAME             VARCHAR2(4000),
+  ESTIMATED_INVESTMENT         NUMBER,
+  PURCHASE_BUDGET              NUMBER,
+  CONTRACT_AMOUNT              NUMBER,
+  PURCHASE_RESULT_STATUS       VARCHAR2(50),
+  PURCHASE_RESULT_CONFIRM_DATE DATE,
+  SOURCE_SCENCE_CODE           VARCHAR2(240),
+  NEGOTIATOR_USER_ID           NUMBER,
+  PURCHASE_SCHEME_NUMBER       VARCHAR2(100),
+  CREATION_DATE                DATE,
+  CREATED_BY                   NUMBER,
+  PURCHASE_TYPE_CODE           VARCHAR2(150),
+  PURCHASE_REASONS_NUMBER      VARCHAR2(100),
+  PURCHASE_REASONS             VARCHAR2(2000),
+  UNIQUE_SOURCE_SCENE          VARCHAR2(2000),
+  APPLICATION_REASON           VARCHAR2(2000),
+  APPLICATION_REASON_CODE      VARCHAR2(100),
+  IS_SIGN_FRAME_CONTRACT       VARCHAR2(100),
+  PROJECTTYPE                  VARCHAR2(100),
+  IS_CHANGE_PURCHASE_BUDGET    VARCHAR2(100),
+  NEW_PURCHASE_BUDGET          NUMBER,
+  ATTRIBUTE1                   VARCHAR2(240),
+  ATTRIBUTE2                   VARCHAR2(240),
+  ATTRIBUTE3                   VARCHAR2(240),
+  ATTRIBUTE4                   VARCHAR2(240),
+  ATTRIBUTE5                   VARCHAR2(240),
+  ATTRIBUTE6                   VARCHAR2(240),
+  ATTRIBUTE7                   VARCHAR2(240),
+  ATTRIBUTE8                   VARCHAR2(240),
+  ATTRIBUTE9                   VARCHAR2(240),
+  ATTRIBUTE10                  VARCHAR2(240),
+  ATTRIBUTE11                  VARCHAR2(240),
+  ATTRIBUTE12                  VARCHAR2(240)
+)
+tablespace SCDA_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the columns 
+comment on column SCDA_PO_PROJECTS.PMS_PROJECT_NUM
+  is 'ppr采购项目号 ,';
+comment on column SCDA_PO_PROJECTS.ES_NUM
+  is 'ES系统生成的编号,';
+comment on column SCDA_PO_PROJECTS.PURCHASE_CONTENT
+  is 'ppr采购内容,';
+comment on column SCDA_PO_PROJECTS.PMS_PROJECT_NAME
+  is 'ppr采购项目名称,';
+comment on column SCDA_PO_PROJECTS.ESTIMATED_INVESTMENT
+  is 'ppr投资估算,';
+comment on column SCDA_PO_PROJECTS.PURCHASE_BUDGET
+  is 'sch采购预算万元,    -- 单位为万元';
+comment on column SCDA_PO_PROJECTS.CONTRACT_AMOUNT
+  is 'ppr合同金额,';
+comment on column SCDA_PO_PROJECTS.PURCHASE_RESULT_STATUS
+  is 'ppr采购结果状态,';
+comment on column SCDA_PO_PROJECTS.PURCHASE_RESULT_CONFIRM_DATE
+  is 'ppr采购结果确认时间,';
+comment on column SCDA_PO_PROJECTS.SOURCE_SCENCE_CODE
+  is 'ppr来源场景, -- UNIQUE_SOURCE  单一来源';
+comment on column SCDA_PO_PROJECTS.NEGOTIATOR_USER_ID
+  is 'ppr采购员id,';
+comment on column SCDA_PO_PROJECTS.PURCHASE_SCHEME_NUMBER
+  is 'ppr采购方案NUMBER,';
+comment on column SCDA_PO_PROJECTS.CREATION_DATE
+  is 'ppr创建时间,';
+comment on column SCDA_PO_PROJECTS.CREATED_BY
+  is 'ppr创建人,';
+comment on column SCDA_PO_PROJECTS.PURCHASE_TYPE_CODE
+  is 'ppr采购类型,-- 集采,非集采';
+comment on column SCDA_PO_PROJECTS.PURCHASE_REASONS_NUMBER
+  is 'sch采购方式理由选用模板编号,';
+comment on column SCDA_PO_PROJECTS.PURCHASE_REASONS
+  is 'sch采购方式理由,    ';
+comment on column SCDA_PO_PROJECTS.UNIQUE_SOURCE_SCENE
+  is 'sch适用单一来源场景,-- 特殊场景需匹配%12%';
+comment on column SCDA_PO_PROJECTS.APPLICATION_REASON
+  is 'sch单一来源特殊场景应用理由,-- 站址租赁类';
+comment on column SCDA_PO_PROJECTS.APPLICATION_REASON_CODE
+  is 'sch特殊场景应用理由编码,-- 2';
+comment on column SCDA_PO_PROJECTS.IS_SIGN_FRAME_CONTRACT
+  is 'res是否签订框架合同,';
+comment on column SCDA_PO_PROJECTS.PROJECTTYPE
+  is 'res是否电子采购项目,';
+comment on column SCDA_PO_PROJECTS.IS_CHANGE_PURCHASE_BUDGET
+  is 'res是否调整方案批准预算,';
+comment on column SCDA_PO_PROJECTS.NEW_PURCHASE_BUDGET
+  is 'res调整后预算,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE1
+  is '备用字段1,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE2
+  is '备用字段2,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE3
+  is '备用字段3,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE4
+  is '备用字段4,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE5
+  is '备用字段5,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE6
+  is '备用字段6,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE7
+  is '备用字段7,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE8
+  is '备用字段8,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE9
+  is '备用字段9,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE10
+  is '备用字段10,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE11
+  is '备用字段11,';
+comment on column SCDA_PO_PROJECTS.ATTRIBUTE12
+  is '备用字段12,';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table SCDA_PO_PROJECTS
+  add constraint SCDA_20190311001 primary key (PMS_PROJECT_NUM)
+  using index 
+

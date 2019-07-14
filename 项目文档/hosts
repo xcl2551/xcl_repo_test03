@@ -1,0 +1,28 @@
+127.0.0.1 localhost
+127.0.0.1 z49uunvhaeysyy1
+192.168.236.1 localhost
+
+127.0.0.1 eureka7001.com
+127.0.0.1 eureka7002.com
+127.0.0.1 eureka7003.com
+
+127.0.0.1 www.xuecheng.com
+127.0.0.1 img.xuecheng.com
+127.0.0.1 video.xuecheng.com
+127.0.0.1 eureka01
+127.0.0.1 eureka02
+
+192.168.236.151 node-1
+192.168.236.152 node-2
+192.168.236.153 node-3
+
+
+
+
+
+
+
+
+
+
+0.0.0.1	mssplus.mcafee.com

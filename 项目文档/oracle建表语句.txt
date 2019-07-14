@@ -1,0 +1,142 @@
+-- oracle建表语句
+-- Create table 第一张表
+create table oauth_access_token
+(
+  token_id          varchar2(256),
+  token             blob,
+  authentication_id varchar2(48) not null,
+  user_name         varchar2(256),
+  client_id         varchar2(256),
+  authentication    blob,
+  refresh_token     varchar(256)
+)
+tablespace MMS1_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table oauth_access_token
+  add constraint scda_201903001 primary key (AUTHENTICATION_ID);
+  
+  
+-- Create table 第二张表
+create table oauth_approvals
+(
+  userid         varchar2(256),
+  clientid       varchar2(256),
+  scope          varchar2(256),
+  status         varchar2(10),
+  expiresat      timestamp default sysdate not null,
+  lastmodifiedat timestamp default '0000-00-00 00:00:00' not null
+)
+tablespace MMS1_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+
+-- Create table  第三张表
+create table oauth_client_details
+(
+  client_id               varchar2(48) not null,
+  resource_ids            varchar2(256),
+  client_secret           varchar2(256),
+  scope                   varchar2(256),
+  authorized_grant_types  varchar2(256),
+  web_server_redirect_uri varchar2(256),
+  authorities             varchar2(256),
+  access_token_validity   number,
+  refresh_token_validity  number,
+  additional_information  varchar2(4000),
+  autoapprove             varchar2(256)
+)
+tablespace MMS1_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table oauth_client_details
+  add constraint scda_201903002 primary key (CLIENT_ID);
+  
+-- Create table  第四张表
+create table oauth_client_token
+(
+  token_id          varchar2(256),
+  token             blob,
+  authentication_id varchar2(48) not null,
+  user_name         varchar2(256),
+  client_id         varchar2(256)
+)
+tablespace MMS1_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table oauth_client_token
+  add constraint scda_201903003 primary key (AUTHENTICATION_ID);
+  
+  
+-- Create table 第五张表
+create table oauth_code
+(
+  code           varchar2(256),
+  authentication blob
+)
+tablespace MMS1_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+  
+-- Create table 第六张表
+create table oauth_refresh_token
+(
+  token_id       varchar2(256),
+  token          blob,
+  authentication blob
+)
+tablespace MMS1_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+  
